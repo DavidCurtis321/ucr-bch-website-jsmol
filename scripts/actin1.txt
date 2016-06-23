@@ -1,0 +1,9 @@
+load pdb/1atn.pdb.gz
+restrict :a;wireframe off;cpk off
+select atomno==1219
+center selected
+select :a;cartoon on;color cartoon lime
+select atp;wireframe on;wireframe 0.3
+cpk on;cpk 0.5
+select atomno= 5019; cpk on;color yellow
+moveTo 1 -994 -86 67 126.2 200
