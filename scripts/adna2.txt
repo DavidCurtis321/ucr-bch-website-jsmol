@@ -1,0 +1,12 @@
+load pdb/116d.pdb.gz
+model All
+moveto 1.0 897 312 -312 67.15 125
+
+restrict dna
+spacefill on
+select water
+spacefill off
+select */1 and backbone
+color yellow
+select */2 and backbone
+color lime
