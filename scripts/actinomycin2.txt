@@ -1,0 +1,23 @@
+zap
+load pdb/173d.pdb.gz
+set ambient 20
+set specular on
+
+reset
+slab off
+moveTo 1 -34 28 999 157.0
+wireframe off
+select hetero
+wireframe 0.3
+select pxz
+color magenta
+
+wireframe off
+select hetero
+spacefill on
+select nucleic
+wireframe 0.35
+select 4 or 5
+color yellow
+select backbone
+color cpk

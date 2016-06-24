@@ -1,0 +1,14 @@
+zap
+load pdb/173d.pdb.gz
+set ambient 20
+set specular on
+
+reset
+moveTo 1 398 917 38 79.8 150
+wireframe off
+cpk off
+select hetero
+wireframe 0.3
+select pxz
+color magenta
+zoom 150

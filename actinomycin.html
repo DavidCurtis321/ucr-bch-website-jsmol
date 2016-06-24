@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Actinomycin D</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <script>
+            var Info = {
+                color: "#FFFFFF",
+                height: 400,
+                width: "100%",
+                script: "script scripts/actinomycin1.txt",
+                use: "HTML5",
+                j2sPath: "jsmol/j2s",
+                jarPath: "jsmol/java",
+                jarFile: "jsmol/JmolAppletSigned0.jar",
+                isSigned: true,
+                serverURL: "jsmol/php/jsmol.php",
+                disableInitialConsole: true,
+                debug: false,
+            };
+
+            $(document).ready(function(){
+                Jmol.setDocument(0);
+                Jmol.getApplet("myJmol1", Info);
+                Info.script = "script scripts/actinomycin2.txt";
+                Jmol.getApplet("myJmol2", Info);
+                $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+                $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+                $("#myJmol1_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol2_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#resetActinomycin1Btn").click(resetActinomycin1);
+                $("#resetActinomycin2Btn").click(resetActinomycin2);
+                $("#spinActinomycin1").click(spinActinomycin1);
+                $("#spinActinomycin2").click(spinActinomycin2);
+            });
+
+            function resetActinomycin1(event){
+                Jmol.script(myJmol1, "script scripts/actinomycin1.txt")
+            };
+
+            function resetActinomycin2(event){
+                Jmol.script(myJmol2, "script scripts/actinomycin2.txt")
+            };
+
+            function spinActinomycin1(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol1, "spin off")
+                };
+            };
+
+            function spinActinomycin2(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol2, "spin off")
+                };
+            };
+
+            Jmol._alertNoBinary = false;
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Actinomycin D</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Introduction</h3>
+                    <p>This script shows the intercalation of actinomycin D into DNA. (Based on 173D.pdb, S. Kamitori &amp; F. Takusagawa, <strong>J. Am. Chem. Soc.</strong> <em>116</em> 4154 (1994)).</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Actinomycin D 1</h3>
+                            <p>Here is Antinomycin D. It has a phenoxazone ring (magenta) that can interact with the bases in DNA.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-danger" id="resetActinomycin1Btn" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinActinomycin1"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Actinomycin D 2</h3>
+                            <p>Note how the phenoxazone ring disrupts the nornal base stacking (yellow). This leads to unwinding and distortion of the DNA duplex, which in turn leads to inhibition of both DNA and RNA synthesis.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-danger" id="resetActinomycin2Btn" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinActinomycin2"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>
+</html>
