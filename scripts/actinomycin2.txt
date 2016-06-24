@@ -1,23 +1,20 @@
-zap
-load pdb/173d.pdb.gz
-set ambient 20
-set specular on
-
-reset
-slab off
-moveTo 1 -34 28 999 157.0
+load "pdb/173d.pdb.gz"
+model All
+moveTo 1 BACK
 wireframe off
-select hetero
-wireframe 0.3
+cpk off
+
 select pxz
 color magenta
 
-wireframe off
-select hetero
+select (hetero or protein) and not water
 spacefill on
+
 select nucleic
 wireframe 0.35
-select 4 or 5
+
+select 12 or 13
 color yellow
+
 select backbone
 color cpk
