@@ -1,4 +1,4 @@
-load 1atn.pdb.gz
+load pdb/1atn.pdb.gz
 restrict :a;wireframe off;cpk off
 select atomno==1219
 center selected
