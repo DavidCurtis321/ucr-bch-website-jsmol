@@ -1,0 +1,12 @@
+load pdb/4gcr.pdb.gz
+spin off
+select all
+wireframe 0.3
+select 2-7 or 14-18
+restrict selected
+center selected
+select 2-7 and sidechain
+color yellow
+select 14-18 and sidechain
+color green
+moveTo 1 331 -906 263 112.9 588

@@ -1,0 +1,3 @@
+load pdb/antibeta.pdb.gz
+spin off
+moveTo 1 -506 -109 -855 152.1 150

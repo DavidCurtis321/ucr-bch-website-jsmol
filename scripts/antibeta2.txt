@@ -1,0 +1,14 @@
+load pdb/4gcr.pdb.gz
+spin off
+select all
+wireframe 0.3
+select 2-7 or 14-18
+calculate hbonds
+hbonds 0.15
+color hbonds green
+restrict selected
+center selected
+restrict backbone
+select atomno=17 or atomno=29
+hbonds off
+moveTo 1 526 -789 -318 150.3 1000
