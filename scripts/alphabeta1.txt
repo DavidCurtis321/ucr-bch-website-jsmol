@@ -1,0 +1,7 @@
+load pdb/1ypi.pdb.gz
+cpk off
+wireframe off
+restrict :a
+cartoon on
+color cartoons structure
+moveTo 0 46 -10 -999 143.6 125 -12.78 3.5

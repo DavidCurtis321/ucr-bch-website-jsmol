@@ -1,0 +1,13 @@
+load pdb/3bto.pdb.gz
+spin off
+cpk off
+wireframe off
+select nad
+cpk on
+select 175-314:a
+cartoon on
+color cartoon structure
+select selected or nad:a
+center selected
+restrict selected
+moveTo 0 -235 465 853 62.1 305
