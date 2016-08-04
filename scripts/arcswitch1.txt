@@ -1,0 +1,14 @@
+load pdb/1arr.pdb.gz
+cpk off
+wireframe off
+cartoons on
+color cartoon structure
+select 16-53
+cartoon off
+strands on
+select 11
+spacefill 2.0
+color cyan
+select 12
+spacefill 2.0
+color green
