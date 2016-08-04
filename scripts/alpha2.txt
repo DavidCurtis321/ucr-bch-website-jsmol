@@ -1,0 +1,11 @@
+load pdb/1wfb.pdb.gz
+spin off
+cpk off
+restrict 12-32:B
+center 12-32:B
+wireframe 0.25
+calculate hbonds
+hbonds 0.15
+color hbonds green
+restrict backbone
+moveTo 0 98 593 799 153.7 419
