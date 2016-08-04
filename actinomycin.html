@@ -23,9 +23,6 @@
                 script: "script scripts/actinomycin1.txt",
                 use: "HTML5",
                 j2sPath: "jsmol/j2s",
-                jarPath: "jsmol/java",
-                jarFile: "jsmol/JmolAppletSigned0.jar",
-                isSigned: true,
                 serverURL: "jsmol/php/jsmol.php",
                 disableInitialConsole: true,
                 debug: false,
@@ -50,21 +47,21 @@
                         "marginBottom": "10",
                         "marginLeft": "auto"
                     });
-                $("#resetActinomycin1Btn").click(resetActinomycin1);
-                $("#resetActinomycin2Btn").click(resetActinomycin2);
-                $("#spinActinomycin1").click(spinActinomycin1);
-                $("#spinActinomycin2").click(spinActinomycin2);
+                $("#resetBtn1").click(reset1);
+                $("#resetBtn2").click(reset2);
+                $("#spinBox1").click(spin1);
+                $("#spinBox2").click(spin2);
             });
 
-            function resetActinomycin1(event){
+            function reset1(event){
                 Jmol.script(myJmol1, "script scripts/actinomycin1.txt")
             };
 
-            function resetActinomycin2(event){
+            function reset2(event){
                 Jmol.script(myJmol2, "script scripts/actinomycin2.txt")
             };
 
-            function spinActinomycin1(event){
+            function spin1(event){
                 if (event.target.checked){
                     Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
                 } else {
@@ -72,7 +69,7 @@
                 };
             };
 
-            function spinActinomycin2(event){
+            function spin2(event){
                 if (event.target.checked){
                     Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
                 } else {
@@ -105,9 +102,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button type="button" class="btn btn-danger" id="resetActinomycin1Btn" style="margin-right: 10px;">Reset</button>
+                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
                             <label class="checkbox-inline">
-                                <input type="checkbox" id="spinActinomycin1"> Spin On/Off
+                                <input type="checkbox" id="spinBox1"> Spin On/Off
                             </label>
                         </div>
                     </div>
@@ -124,9 +121,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button type="button" class="btn btn-danger" id="resetActinomycin2Btn" style="margin-right: 10px;">Reset</button>
+                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
                             <label class="checkbox-inline">
-                                <input type="checkbox" id="spinActinomycin2"> Spin On/Off
+                                <input type="checkbox" id="spinBox2"> Spin On/Off
                             </label>
                         </div>
                     </div>

@@ -22,9 +22,8 @@
                 width: "100%",
                 script: "script scripts/actin1.txt",
                 use: "HTML5",
-                j2sPath: "http://biochemistry.ucr.edu/js/jsmol/j2s",
-                isSigned: true,
-                serverURL: "http://biochemistry.ucr.edu/js/jsmol/php/jsmol.php",
+                j2sPath: "jsmol/j2s",
+                serverURL: "jsmol/php/jsmol.php",
                 disableInitialConsole: true,
                 debug: false,
             };
@@ -48,21 +47,21 @@
                         "marginBottom": "10",
                         "marginLeft": "auto"
                     });
-                $("#resetActin1Btn").click(resetActin1);
-                $("#resetActin2Btn").click(resetActin2);
-                $("#spinActin1").click(spinActin1);
-                $("#spinActin2").click(spinActin2);
+                $("#resetBtn1").click(reset1);
+                $("#resetBtn2").click(reset2);
+                $("#spinBox1").click(spin1);
+                $("#spinBox2").click(spin2);
             });
 
-            function resetActin1(event){
+            function reset1(event){
                 Jmol.script(myJmol1, "script scripts/actin1.txt")
             };
 
-            function resetActin2(event){
+            function reset2(event){
                 Jmol.script(myJmol2, "script scripts/actin2.txt")
             };
 
-            function spinActin1(event){
+            function spin1(event){
                 if (event.target.checked){
                     Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
                 } else {
@@ -70,7 +69,7 @@
                 };
             };
 
-            function spinActin2(event){
+            function spin2(event){
                 if (event.target.checked){
                     Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
                 } else {
@@ -103,9 +102,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button type="button" class="btn btn-danger" id="resetActin1Btn" style="margin-right: 10px;">Reset</button>
+                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
                             <label class="checkbox-inline">
-                                <input type="checkbox" id="spinActin1"> Spin On/Off
+                                <input type="checkbox" id="spinBox1"> Spin On/Off
                             </label>
                         </div>
                     </div>
@@ -122,9 +121,9 @@
                     </div>
                     <div class="row">
                         <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetActin2Btn" style="margin-right: 10px;">Reset</button>
+                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
                             <label class="checkbox-inline">
-                                <input type="checkbox" id="spinActin2"> Spin On/Off
+                                <input type="checkbox" id="spinBox2"> Spin On/Off
                             </label>
                         </div>
                     </div>
