@@ -1,0 +1,9 @@
+load pdb/1c94.pdb.gz
+cpk off
+wireframe off
+cartoon on
+color cartoon structure
+select leu
+spacefill 2.0
+color green
+moveTo 0 577 656 487 104.7

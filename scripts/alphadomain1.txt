@@ -1,0 +1,5 @@
+load pdb/1gcn.pdb.gz
+cpk off
+wireframe off
+cartoon on
+color cartoon structure

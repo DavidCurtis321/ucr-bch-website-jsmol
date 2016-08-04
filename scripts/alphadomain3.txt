@@ -1,0 +1,6 @@
+load pdb/1fha.pdb.gz
+cpk off
+wireframe off
+cartoon on
+color cartoon structure
+moveTo 0 -967 238 -93 131.0

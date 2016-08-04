@@ -1,0 +1,8 @@
+load pdb/1mbo.pdb.gz
+cpk off
+wireframe off
+cartoon on
+color cartoon structure
+select hem
+wireframe 0.3
+moveTo 0 987 94 -130 63.3 156
