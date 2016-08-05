@@ -1,0 +1,6 @@
+
+load pdb/atp.pdb.gz
+moveTo 1 960 270 -70 141.2 100 -8 -5
+color atoms cpk
+spacefill 0.4
+set shadow off
