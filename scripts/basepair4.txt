@@ -1,0 +1,13 @@
+load pdb/2bdna.pdb.gz
+moveTo 1 -982 179 53 177.0 469 3 0
+
+restrict 4 or 21
+wireframe 0.20
+calculate hbond
+hbond 0.10
+color hbond green
+
+hbonds off
+restrict 4 or 21
+hbonds on
+hbond 0.1
