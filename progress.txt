@@ -1,0 +1,66 @@
+routines -- could we have a list for this
+
+peptide [x]
+alpha [x]
+alpha_beta [x]
+alpha_domain [x]
+antibeta [x]
+convention
+helices
+motif
+beta_domain
+sheet
+sheet_helix
+sidechain
+
+hbbpg
+hbs
+hemoglobin
+myoglob
+
+serproev
+serprot
+zymogen
+chloro
+trypinhib
+
+troponin
+
+cholest
+fatty
+bilayer
+phosphatidylcholine
+sphingo
+cox12
+transmem
+
+monosacc
+disacc
+heparin
+
+lectin
+lysozyme
+
+adna [x]
+arna [x]
+bdna
+zdna
+basepairing [x]
+dnaminor
+
+prodna
+transcrip
+
+iganti
+igstructure
+gfp
+newtim
+collagen
+porin
+proteindomains
+silk
+
+hexokinase
+rhodopsin
+
+atp [x]
