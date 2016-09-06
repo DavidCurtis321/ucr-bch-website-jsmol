@@ -1,0 +1,8 @@
+load pdb/peptide.pdb.gz
+moveTo 0 565 351 747 109.6
+color cpk
+wireframe off
+select atomno=22 or atomno=23 or atomno=24 or atomno=27 or atomno=28 or atomno=33
+restrict selected
+center selected
+wireframe 40
