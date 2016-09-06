@@ -1,0 +1,12 @@
+load pdb/1tim.pdb.gz
+color white
+spacefill off
+wireframe off
+cartoons on
+select helix
+color green
+select sheet
+color red
+restrict 6-31:A
+center 6-31:A
+moveTo 0 323 -317 891 124.9 429

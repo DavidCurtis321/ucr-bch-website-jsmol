@@ -5,7 +5,7 @@ alpha [x]
 alpha_beta [x]
 alpha_domain [x]
 antibeta [x]
-convention
+convention [x]
 helices
 motif
 beta_domain
