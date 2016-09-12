@@ -1,0 +1,16 @@
+load pdb/4gcr.pdb.gz
+spin off
+restrict protein
+center 1-18
+select backbone
+cartoons on
+color white
+select sheets
+color red
+select helix
+color green
+select all
+wireframe off
+cpk off
+restrict 1-18
+moveTo 1 -706 456 -542 106.0 305

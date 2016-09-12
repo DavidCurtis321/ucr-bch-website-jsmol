@@ -1,0 +1,14 @@
+load pdb/256b.pdb.gz
+spin off
+restrict protein
+center 1-43:B
+select backbone
+cartoons on
+color white
+select helix
+color green
+select all
+wireframe off
+cpk off
+restrict 1-43:B
+moveTo 1 -967 171 -190 155.1 245

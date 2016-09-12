@@ -1,0 +1,22 @@
+load pdb/5cpv.pdb.gz
+spin off
+restrict protein
+center 79-107
+select backbone
+cartoons on
+select all
+cpk off
+wireframe off
+select 79-89
+color blue
+select 99-107
+color red
+select 92 or 94 or 101
+wireframe 0.25
+color cpk
+select atomno=812
+color green
+cpk 30%
+dots on
+restrict 79-107 or atomno=812
+moveTo 1 0 0 0 0 195
