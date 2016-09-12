@@ -1,0 +1,11 @@
+load pdb/p26a3.pdb.gz
+cpk off
+wireframe off
+select 126-143
+cartoon on
+color green
+select 120-125
+cartoon on
+color yellow
+select 126;cpk;color cpk
+moveTo 0 -9 -981 -194 80.5

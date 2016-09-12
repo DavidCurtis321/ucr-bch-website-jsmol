@@ -10,7 +10,7 @@ helices [x]
 motif [x]
 beta_domain [x]
 sheet [x]
-sheet_helix
+sheet_helix [x]
 sidechain
 
 hbbpg

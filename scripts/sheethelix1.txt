@@ -1,0 +1,13 @@
+load pdb/k36e2.pdb.gz
+cpk off
+wireframe off
+select 10-25 or 26-43
+cartoons on
+select helix
+color green
+select 20-27
+color yellow
+select 10-19
+color red
+moveTo 0 191 956 221 98.7 125
+select 26; cpk; color cpk
