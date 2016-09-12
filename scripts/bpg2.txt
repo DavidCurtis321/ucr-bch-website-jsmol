@@ -1,0 +1,11 @@
+load pdb/1b86.pdb.gz
+select all;cpk off;wireframe off
+select :A;color lime;cpk on
+select :C;color lime;cpk on
+select :B;color aqua;cpk on
+select :D;color aqua;cpk on
+select hem;color cpk
+select ddh;color cpk
+select dg2;color cpk
+select water; spacefill off
+moveTo 1 -33 999 -31 72.2 125

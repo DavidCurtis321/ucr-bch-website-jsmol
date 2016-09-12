@@ -13,7 +13,7 @@ sheet [x]
 sheet_helix [x]
 sidechain [x]
 
-hbbpg
+hbbpg [x]
 hbs
 hemoglobin
 myoglob
