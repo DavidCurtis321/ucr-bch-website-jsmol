@@ -1,0 +1,11 @@
+load pdb/1pkm.pdb.gz
+cpk off
+wireframe off
+restrict 424-530
+center 424-530
+cartoons on
+color cartoon structure
+select 424-530 and helix
+cartoon off
+strands on
+zoom 595

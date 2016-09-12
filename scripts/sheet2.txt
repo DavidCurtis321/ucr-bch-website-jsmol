@@ -1,0 +1,11 @@
+load pdb/1tim.pdb.gz
+cpk off
+wireframe off
+restrict :A
+center :A
+cartoon on
+color cartoon structure
+select helix and :A
+cartoon off
+strands on
+moveTo 0 -822 -106 -559 48.0 305
