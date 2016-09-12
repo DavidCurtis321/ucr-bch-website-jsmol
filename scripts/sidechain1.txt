@@ -1,0 +1,10 @@
+load pdb/1aep.pdb.gz
+cpk off
+wireframe off
+cartoons on
+color cartoon structure
+select Arg or Lys or Asn or Glu or Pro or Asp
+spacefill 1.3; color skyblue
+select Phe or Ile or Trp or Leu or Val or Met or Tyr or Cys or Ala
+spacefill 1.3; color gold
+moveTo 0 650 -376 -661 158.9 156
