@@ -1,0 +1,5 @@
+load pdb/tb_310_helix.pdb.gz
+select all
+cpk on
+moveTo 1 616 -293 -731 155.6 124
+color cpk

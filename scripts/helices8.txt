@@ -1,0 +1,16 @@
+load pdb/tb_310_helix.pdb.gz
+moveTo 1 616 -293 -731 155.6 124
+hbond on
+select atomno=5;label "1";color label yellow;font label 18
+select atomno=4
+select atomno=6;label "3";color label yellow;font label 18
+select atomno=7
+select atomno=9;label "5";color label yellow;font label 18
+select atomno=11
+select atomno=12;label "7";color label yellow;font label 18
+select atomno=14
+select atomno=16;label "9";color label yellow;font label 18
+select 3-4
+trace on;color trace yellow
+select 2-5.ca
+label %r;color label red;font label 18

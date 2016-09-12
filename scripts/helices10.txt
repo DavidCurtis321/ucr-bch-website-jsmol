@@ -1,0 +1,5 @@
+load pdb/perfect_pi_helix_mod.pdb.gz
+select all
+cpk on
+moveto 1 -258 -84 -963 137.53 124
+color cpk

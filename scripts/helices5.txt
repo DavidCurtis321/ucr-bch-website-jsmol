@@ -1,0 +1,21 @@
+load pdb/tb_alpha_helix_noh.pdb.gz
+moveTo 1 -526 -109 843 177.2 156 4 -5
+calculate hbond
+hbond 0.1
+select atomno=11;label "1";color label yellow;font label 18
+select atomno=10
+select atomno=12;label "3";color label yellow;font label 18
+select atomno=14
+select atomno=21;label "5";color label yellow;font label 18
+select atomno=23
+select atomno=25;label "7";color label yellow;font label 18
+select atomno=32
+select atomno=34;label "9";color label yellow;font label 18
+select atomno=36
+center selected
+select atomno=43;label "11";color label yellow;font label 18
+select atomno=45;label "12";color label yellow;font label 18
+select atomno=47;label "13";color label yellow;font label 18
+select 3-5;trace on;color trace yellow
+select 2-5.ca
+label %r;color label red;font label 18

@@ -1,0 +1,23 @@
+load pdb/perfect_pi_helix_mod.pdb.gz
+moveto 1 -8 -694 -720 163.3 124
+hbond on
+select atomno=11;label "1";color label yellow;font label 18
+select atomno=10
+select atomno=12;label "3";color label yellow;font label 18
+select atomno=14
+select atomno=21;label "5";color label yellow;font label 18
+select atomno=23
+select atomno=25;label "7";color label yellow;font label 18
+select atomno=32
+select atomno=34;label "9";color label yellow;font label 18
+select atomno=36
+select atomno=43;label "11";color label yellow;font label 18
+select atomno=45
+select atomno=47;label "13";color label yellow;font label 18
+select atomno=54
+select atomno=56;label "15";color label yellow
+font label 18
+select 3-6
+trace on;color trace yellow
+select 2-5.ca
+label %r;color label red;font label 18

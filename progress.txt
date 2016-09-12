@@ -6,7 +6,7 @@ alpha_beta [x]
 alpha_domain [x]
 antibeta [x]
 convention [x]
-helices
+helices [x]
 motif
 beta_domain
 sheet

@@ -1,0 +1,14 @@
+load pdb/perfect_pi_helix_mod.pdb.gz
+select all
+wireframe on
+wireframe 0.2
+cpk off
+moveTo 1 339 -623 -705 117.4 125
+restrict *.ca
+label %r;color label yellow;font label 15
+select all
+wireframe on
+wireframe 0.2
+cpk on
+cpk 0.5
+hbonds on

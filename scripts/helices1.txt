@@ -1,0 +1,9 @@
+load pdb/tb_alpha_helix_noh.pdb.gz
+select all
+wireframe 0.2
+cpk off
+moveTo 1 352 -858 -373 109.3 124 -1 -1
+restrict *.ca
+label %r;color label yellow;font label 15
+select all
+wireframe 0.2
