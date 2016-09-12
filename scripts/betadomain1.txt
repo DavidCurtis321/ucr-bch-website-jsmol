@@ -1,0 +1,7 @@
+load pdb/1stp.pdb.gz
+spin off
+cpk off
+wireframe off
+cartoon on
+color cartoon structure
+moveTo 0 692 -610 387 128.2 125

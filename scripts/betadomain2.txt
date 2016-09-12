@@ -1,0 +1,7 @@
+load pdb/1ifb.pdb.gz
+spin off
+cpk off
+wireframe off
+cartoon on
+color cartoon structure
+moveTo 0 46 -10 -999 143.6 100
