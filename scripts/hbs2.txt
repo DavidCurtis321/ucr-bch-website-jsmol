@@ -1,0 +1,12 @@
+load pdb/1hbs.pdb.gz
+moveto 0 -62 -107 -992 87.5 156 -7 -2
+select all
+wireframe off;cpk off
+select :h
+spacefill on
+color yellow
+select :h and val6
+color blue
+select :b
+spacefill on
+color orange
