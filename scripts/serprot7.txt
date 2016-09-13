@@ -1,0 +1,12 @@
+load pdb/2tbs.pdb.gz
+moveTo 0 16 -739 674 97.9 250
+
+cpk off
+wireframe off
+select 189 or 216 or 226 or ben
+color cpk
+spacefill on
+select ben
+center selected
+select atomno==1667
+center selected

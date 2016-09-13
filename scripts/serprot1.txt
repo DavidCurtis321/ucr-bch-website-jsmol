@@ -1,0 +1,19 @@
+load pdb/8gch.pdb.gz
+moveTo 0 -628 -761 -162 69.1 250 -4 2
+
+select all
+cpk off
+wireframe off
+select 57 or 102 or 195
+wireframe 0.25
+SELECT 57
+SPACEFILL ON
+color red
+SELECT 102
+SPACEFILL ON
+color blue
+SELECT 195
+SPACEFILL ON
+color lime
+select atomno==392
+center selected

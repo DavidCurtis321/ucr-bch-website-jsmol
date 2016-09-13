@@ -19,7 +19,7 @@ hemoglobin [x]
 myoglob [x]
 
 serproev [x]
-serprot
+serprot [x]
 zymogen
 chloro
 trypinhib

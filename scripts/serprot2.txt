@@ -1,0 +1,24 @@
+load pdb/8gch.pdb.gz
+moveTo 0 -782 -592 -192 65.4 250 -3 0
+
+select all
+cpk off
+wireframe off
+select 57 or 102 or 195
+wireframe 0.25
+SELECT 57
+SPACEFILL ON
+SELECT 102
+SPACEFILL ON
+SELECT 195
+SPACEFILL ON
+SELECT ATOMNO==1387
+COLOR YELLOW
+SELECT ATOMNO==394
+COLOR YELLOW
+SELECT ATOMNO==391
+COLOR YELLOW
+SELECT ATOMNO==736
+COLOR YELLOW
+select atomno==392
+center selected
