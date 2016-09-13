@@ -1,0 +1,12 @@
+load pdb/zymogen.pdb.gz
+rotate z 18
+rotate y -35
+rotate x -71
+zoom 125
+
+select all
+wireframe 0.15
+select :a
+color yellow
+select :b
+color red

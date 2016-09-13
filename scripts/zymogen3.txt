@@ -1,0 +1,26 @@
+load pdb/zymogen.pdb.gz
+select all
+select :a
+color yellow
+select :b
+color red
+select all
+wireframe off
+
+moveTo 0 -30 -999 -35 148.1 400 -13 4
+select all
+labels off
+spacefill off
+wireframe off
+select 189 or 216 or 226
+wireframe 50
+spacefill 100
+select :a and atomno==1406
+label "  Gly 216"
+color lime
+select :a and atomno==1471
+label "  Gly 226"
+color lime
+select :a and atomno==1252
+label "  Asp 189"
+color lime

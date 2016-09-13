@@ -20,7 +20,7 @@ myoglob [x]
 
 serproev [x]
 serprot [x]
-zymogen
+zymogen [x]
 chloro
 trypinhib
 

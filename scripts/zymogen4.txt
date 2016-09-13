@@ -1,0 +1,22 @@
+load pdb/zymogen.pdb.gz
+
+select all
+wireframe off
+select :a
+color yellow
+select :b
+color red
+
+moveTo 0 347 -902 -256 159.1 500 -11 13
+restrict 193 or 195
+spacefill 100
+wireframe 50
+select atomno==1287 or atomno==1275
+color blue
+set fontsize 12
+select :a and atomno==1276
+label "   zGly 193"
+color lime
+select :b and atomno==1276
+label "   aGly 193"
+color lime

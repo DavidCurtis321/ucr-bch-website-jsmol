@@ -1,0 +1,22 @@
+load pdb/zymogen.pdb.gz
+moveTo 0 35 -992 -123 155.7 381 8 26
+select all
+wireframe off
+select :a
+color yellow
+select :b
+color red
+
+restrict 57 or 102 or 195
+spacefill 100
+wireframe 50
+set fontsize 12
+select :a and atomno==628
+label "   Asp 102"
+color lime
+select :a and atomno==286
+label "   His 57"
+color lime
+select :a and atomno==1287
+label "   Ser 195"
+color lime
