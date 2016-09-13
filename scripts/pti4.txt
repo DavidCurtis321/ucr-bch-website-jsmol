@@ -1,0 +1,8 @@
+load pdb/2ptc.pdb.gz
+moveTo 0 -115 960 254 102.5 2000 -2 -3
+restrict :i and 15-16
+spacefill off
+wireframe 0.3
+color cpk
+select atomno==1742
+center selected

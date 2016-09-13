@@ -1,0 +1,20 @@
+load pdb/2ptc.pdb.gz
+moveTo 0 265 -961 78 87.8 305 0 16
+select :e
+wireframe off
+spacefill on
+color white
+select :i
+wireframe off
+spacefill on
+color lime
+select :e
+spacefill off
+select 189-195 OR 215-216 or 226-228
+spacefill on
+select water
+cpk off
+select [CA]462.CA #2133
+cpk off
+select :i and 15
+color red

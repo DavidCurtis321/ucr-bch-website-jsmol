@@ -1,0 +1,27 @@
+load pdb/2ptc.pdb.gz
+moveTo 0 671 -740 40 123.2 305 -2 -7
+select :e
+wireframe off
+spacefill on
+color white
+select :i
+wireframe off
+spacefill on
+color green
+select :e
+spacefill off
+select 189-195 OR 215-216 or 226-228
+spacefill on
+select water
+cpk off
+select [CA]462.CA #2133
+cpk off
+select :i and 15
+color red
+select :i
+spacefill off
+select :i and 14-17
+spacefill on
+color cpk
+select atomno==1753
+color green
