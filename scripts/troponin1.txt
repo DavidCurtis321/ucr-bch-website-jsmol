@@ -1,0 +1,13 @@
+load pdb/5tnc.pdb.gz
+moveTo 0 995 -30 -92 179.1 100 -3 1
+
+wireframe off
+cpk off
+select all
+color white
+cartoons on
+select helix
+color lime
+select hetero and ca
+spacefill on
+color red

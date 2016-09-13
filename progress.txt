@@ -22,9 +22,9 @@ serproev [x]
 serprot [x]
 zymogen [x]
 chloro [x]
-trypinhib
+trypinhib [x]
 
-troponin
+troponin [x]
 
 cholest
 fatty
