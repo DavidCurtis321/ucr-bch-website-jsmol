@@ -21,7 +21,7 @@ myoglob [x]
 serproev [x]
 serprot [x]
 zymogen [x]
-chloro
+chloro [x]
 trypinhib
 
 troponin

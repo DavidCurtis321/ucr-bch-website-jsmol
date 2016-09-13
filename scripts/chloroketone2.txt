@@ -1,0 +1,15 @@
+load pdb/2gmt.pdb.gz
+moveto 0 -774 -77 629 171.4
+slab off
+wireframe off
+strands on
+set strands 4
+color strands gray
+select all
+spacefill off
+select hetero and not water
+spacefill on
+color green
+SELECT 57
+SPACEFILL ON
+COLOR YELLOW
