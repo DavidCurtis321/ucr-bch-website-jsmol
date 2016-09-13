@@ -1,0 +1,6 @@
+load pdb/2hhb.pdb.gz
+wireframe off;cpk off
+select protein
+cartoon on;color cartoon chain
+select hem;cpk on
+moveTo 0 -993 75 -92 64.4

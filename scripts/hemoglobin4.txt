@@ -1,0 +1,7 @@
+load pdb/2hhb.pdb.gz
+wireframe off;cpk off
+select protein
+select :a or :c;cpk on;color lime
+select :b or :d;cpk on;color red
+select hem;cpk on;color cpk
+moveTo 0 43 -99 -994 172.7

@@ -15,7 +15,7 @@ sidechain [x]
 
 hbbpg [x]
 hbs [x]
-hemoglobin
+hemoglobin [x]
 myoglob
 
 serproev
