@@ -18,7 +18,7 @@ hbs [x]
 hemoglobin [x]
 myoglob [x]
 
-serproev
+serproev [x]
 serprot
 zymogen
 chloro

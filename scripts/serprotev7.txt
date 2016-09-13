@@ -1,0 +1,53 @@
+load pdb/serpro3.pdb.gz
+moveTo 0 -443 295 -847 141.4 200 10 -2
+select all
+wireframe 0.2
+cpk off
+color lime
+select :e
+color blue
+select hetero
+wireframe off
+select 57 or 102 or 195
+spacefill on
+select all
+wireframe off
+select all
+select :e
+spacefill off
+select :e and 216 or :e and 226 or :e and 189
+spacefill on
+color orange
+select :I
+spacefill on
+color red
+select :I and hetero
+spacefill off
+select all
+wireframe off
+select :i
+spacefill off
+select :c
+spacefill on
+color magenta
+select 216 or 226 or 189
+spacefill on
+select :e and 216 or :e and 226 or :e and 189
+spacefill off
+select 216 or 226 or 189
+spacefill off
+select :e and 216 or :e and 226 or :e and 189
+spacefill on
+
+select :c
+spacefill off
+wireframe 0.25
+select 216 or 226 or 189
+spacefill off
+wireframe 0.25
+select :c
+wireframe off
+select :c
+wireframe off
+select :i and not hetero
+wireframe 0.25
