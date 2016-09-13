@@ -1,0 +1,14 @@
+load pdb/1mbo.pdb.gz
+spin off
+wireframe off
+cpk
+color white
+select his64
+color magenta
+select his93
+color green
+select hem
+color cpk
+select hoh or so4
+cpk off
+moveTo 0 994 -110 -7 55.3 110

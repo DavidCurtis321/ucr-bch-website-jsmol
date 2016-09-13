@@ -1,0 +1,17 @@
+load pdb/1mbo.pdb.gz
+spin off
+wireframe off
+color white
+cpk off
+ribbons on
+select his93 or his64 or hem
+wireframe 0.3
+select his93
+color green
+select his64
+color magenta
+select hem
+color cpk
+select atomno=1611 or atomno=1612
+dots on
+moveTo 0 964 -197 175 87.7 200
