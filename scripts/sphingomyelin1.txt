@@ -1,0 +1,5 @@
+load pdb/sphingomyelin.pdb.gz
+
+moveTo 0 -102 -964 245 171.0 100 -2 1
+
+spacefill on

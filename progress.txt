@@ -30,7 +30,7 @@ cholest [x]
 fatty [x]
 bilayer [x]
 phosphatidylcholine [x]
-sphingo
+sphingo [x]
 cox12
 transmem
 
