@@ -1,0 +1,6 @@
+load pdb/bilayer_crystal2.pdb.gz
+
+wireframe 1.0
+rotate y 90
+zoom 125
+rotate x 5

@@ -1,0 +1,16 @@
+load pdb/bilayer_crystal2.pdb.gz
+
+color cpk
+spacefill on
+translate x-20
+set fontsize 12
+color label green
+select atomno==3585 or atomno==1451
+label "   <- Head Group"
+select atomno==3713 or atomno==1456
+label " <- Glycerol Backbone"
+select atomno==3578 or atomno==1446
+label "  <- Fatty Acyl Chains"
+select all
+labels off
+rotate x 90

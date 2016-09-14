@@ -1,0 +1,7 @@
+load pdb/bilayer_fluid2.pdb.gz
+
+wireframe 0.3
+rotate y 90
+zoom 125
+rotate y 90
+rotate x 5

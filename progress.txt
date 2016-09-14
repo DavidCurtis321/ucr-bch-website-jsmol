@@ -28,7 +28,7 @@ troponin [x]
 
 cholest [x]
 fatty [x]
-bilayer
+bilayer [x]
 phosphatidylcholine
 sphingo
 cox12
