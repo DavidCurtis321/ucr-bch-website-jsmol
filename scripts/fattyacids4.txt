@@ -1,0 +1,4 @@
+load pdb/fattyacid_18_3.pdb.gz
+
+moveTo 0 -917 47 -214 45.1 110 -5 -1
+spacefill on

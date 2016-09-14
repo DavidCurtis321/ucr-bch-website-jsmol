@@ -1,0 +1,4 @@
+load pdb/fattyacid_20_4.pdb.gz
+
+moveTo 0 -740 -618 265 152.4 88 -4 0
+spacefill on

@@ -1,0 +1,6 @@
+load pdb/fattyacid_18_1.pdb.gz
+
+rotate y 2
+rotate x -44
+moveTo 0 1000 -14 28 125.8 110 -3 -1
+spacefill on
