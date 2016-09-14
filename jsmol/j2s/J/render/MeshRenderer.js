@@ -35,6 +35,8 @@ this.bsPolygons = null;
 this.isTranslucentInherit = false;
 this.renderLow = false;
 this.meshSlabValue = 100;
+this.showTriangles = false;
+this.forceShowTriangles = false;
 this.bsPolygonsToExport = null;
 Clazz.instantialize (this, arguments);
 }, J.render, "MeshRenderer", J.render.ShapeRenderer);
@@ -71,7 +73,7 @@ var c = mesh.colix;
 for (var j = max; --j >= 0; ) {
 var m = mesh.symops[j];
 if (m == null) continue;
-if (mesh.colorType == 1296041474) mesh.colix = mesh.symopColixes[j];
+if (mesh.colorType == 1296041986) mesh.colix = mesh.symopColixes[j];
 var normals = mesh.symopNormixes[j];
 var needNormals = (normals == null);
 verticesTemp = (needNormals ?  new Array (this.vertexCount) : null);
@@ -112,6 +114,7 @@ return true;
 Clazz.defineMethod (c$, "setVariables", 
  function () {
 if (this.mesh.visibilityFlags == 0) return false;
+this.showTriangles = this.forceShowTriangles || this.mesh.showTriangles;
 if (this.mesh.bsSlabGhost != null) this.g3d.setC (this.mesh.slabColix);
 if (this.mesh.colorsExplicit) this.g3d.setC (2047);
 this.isGhostPass = (this.mesh.bsSlabGhost != null && (this.isExport ? this.exportPass == 2 : this.vwr.gdata.isPass2));
@@ -162,8 +165,8 @@ Clazz.defineMethod (c$, "render2b",
 function (generateSet) {
 if (!this.g3d.setC (this.isGhostPass ? this.mesh.slabColix : this.colix)) return;
 if (this.renderLow || this.mesh.showPoints || this.mesh.pc <= 0) this.renderPoints ();
-if (!this.renderLow && (this.isGhostPass ? this.mesh.slabMeshType == 1073742018 : this.mesh.drawTriangles)) this.renderTriangles (false, this.mesh.showTriangles, false);
-if (!this.renderLow && this.mesh.pc > 0 && (this.isGhostPass ? this.mesh.slabMeshType == 1073741938 : this.mesh.fillTriangles)) this.renderTriangles (true, this.mesh.showTriangles, generateSet);
+if (!this.renderLow && (this.isGhostPass ? this.mesh.slabMeshType == 1073742018 : this.mesh.drawTriangles)) this.renderTriangles (false, this.showTriangles, false);
+if (!this.renderLow && this.mesh.pc > 0 && (this.isGhostPass ? this.mesh.slabMeshType == 1073741938 : this.mesh.fillTriangles)) this.renderTriangles (true, this.showTriangles, generateSet);
 }, "~B");
 Clazz.defineMethod (c$, "renderPoints", 
 function () {

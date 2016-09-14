@@ -405,7 +405,10 @@ throw e;
 }, "J.c.CBK,~A");
 Clazz.defineMethod (c$, "sendScript", 
  function (script, appletName, isSync, doCallback) {
-if (doCallback) {
+if ("audio:" === appletName) {
+this.playAudio (script);
+return "";
+}if (doCallback) {
 script = this.notifySync (script, appletName);
 if (script == null || script.length == 0 || script.equals ("0")) return "";
 }var apps =  new JU.Lst ();
@@ -441,6 +444,11 @@ throw e;
 }
 return (isSync ? "" : sb.toString ());
 }, "~S,~S,~B,~B");
+Clazz.defineMethod (c$, "playAudio", 
+function (fileOrDataURI) {
+{
+Jmol._playAudio(fileNameOrDataURI);
+}}, "~S");
 Clazz.defineMethod (c$, "notifySync", 
  function (info, appletName) {
 var syncCallback = this.b$.get (J.c.CBK.SYNC);

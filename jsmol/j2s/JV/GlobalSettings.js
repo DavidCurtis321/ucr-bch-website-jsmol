@@ -127,6 +127,7 @@ this.allowGestures = false;
 this.allowModelkit = true;
 this.allowMultiTouch = true;
 this.allowKeyStrokes = false;
+this.hiddenLinesDashed = false;
 this.animationFps = 10;
 this.atomPicking = true;
 this.autoFps = false;
@@ -277,7 +278,7 @@ this.pdbLoadFormat0 = this.databases.get ("pdb0");
 this.pdbLoadLigandFormat = this.databases.get ("ligand");
 this.nmrUrlFormat = this.databases.get ("nmr");
 this.nmrPredictFormat = this.databases.get ("nmrdb");
-this.smilesUrlFormat = this.databases.get ("nci") + "/file?format=sdf&get3d=True";
+this.smilesUrlFormat = this.databases.get ("nci") + "/file?format=sdf&get3d=true";
 this.nihResolverFormat = this.databases.get ("nci");
 this.pubChemFormat = this.databases.get ("pubchem");
 for (var item, $item = 0, $$item = J.c.CBK.values (); $item < $$item.length && ((item = $$item[$item]) || true); $item++) this.resetValue (item.name () + "Callback", g);
@@ -439,6 +440,7 @@ this.setO ("helpPath", this.helpPath);
 this.setI ("hermiteLevel", this.hermiteLevel);
 this.setB ("hideNameInPopup", this.hideNameInPopup);
 this.setB ("hideNavigationPoint", this.hideNavigationPoint);
+this.setB ("hiddenLinesDashed", this.hiddenLinesDashed);
 this.setB ("highResolution", this.highResolutionFlag);
 this.setF ("hoverDelay", this.hoverDelayMs / 1000);
 this.setB ("imageState", this.imageState);
@@ -707,7 +709,7 @@ if ((format = this.databases.get (database.toLowerCase ())) == null) return null
 var pt = id.indexOf ("/");
 if (pt < 0) {
 if (database.equals ("pubchem")) id = "name/" + id;
- else if (database.equals ("nci")) id += "/file?format=sdf&get3d=True";
+ else if (database.equals ("nci")) id += "/file?format=sdf&get3d=true";
 }if (format.startsWith ("'")) {
 pt = id.indexOf (".");
 var n = (pt > 0 ? JU.PT.parseInt (id.substring (pt + 1)) : 0);
