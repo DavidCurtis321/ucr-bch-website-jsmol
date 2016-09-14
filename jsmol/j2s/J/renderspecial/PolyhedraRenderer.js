@@ -19,7 +19,7 @@ this.$drawEdges = polyhedra.drawEdges;
 this.bsSelected = (this.vwr.getSelectionHalosEnabled () ? this.vwr.bsA () : null);
 this.g3d.addRenderer (1073742182);
 this.vibs = (this.ms.vibrations != null && this.tm.vibrationOn);
-this.showNumbers = this.vwr.getTestFlag (3);
+this.showNumbers = this.vwr.getBoolean (603979964);
 var needTranslucent = false;
 for (var i = polyhedra.polyhedronCount; --i >= 0; ) if (polyhedrons[i].isValid && this.render1 (polyhedrons[i])) needTranslucent = true;
 
@@ -74,14 +74,12 @@ var atom = (Clazz.instanceOf (vertices[i], JM.Atom) ? vertices[i] : null);
 var v = sc[i];
 if (atom == null) {
 this.tm.transformPtScrT3 (vertices[i], v);
-} else if (atom.isVisible (this.myVisibilityFlag)) {
-v.set (atom.sX, atom.sY, atom.sZ);
 } else if (this.vibs && atom.hasVibration ()) {
 this.scrVib = this.tm.transformPtVib (atom, this.ms.vibrations[atom.i]);
 v.set (this.scrVib.x, this.scrVib.y, this.scrVib.z);
 } else {
 this.tm.transformPt3f (atom, v);
-}if (elemNos != null && i + 1 < vertices.length && this.g3d.setC (elemNos[i] < 0 ? 4 : this.vwr.cm.setElementArgb (elemNos[i], 2147483647))) {
+}if (elemNos != null && i < elemNos.length && this.g3d.setC (elemNos[i] < 0 ? 4 : this.vwr.cm.setElementArgb (elemNos[i], 2147483647))) {
 this.g3d.fillSphereBits (Clazz.floatToInt (this.tm.scaleToScreen (Clazz.floatToInt (v.z), Clazz.floatToInt (p.pointScale * 1000))), v);
 this.g3d.setC (colix);
 }if (this.showNumbers) {

@@ -6,7 +6,7 @@ this.subtype = null;
 this.structureID = null;
 this.strucNo = 0;
 this.serialID = 0;
-this.strandCount = 0;
+this.strandCount = 1;
 this.nRes = 0;
 this.apolymer = null;
 this.monomerIndexFirst = 0;
@@ -27,7 +27,7 @@ this.type = type;
 this.vectorProjection =  new JU.V3 ();
 this.monomerIndexFirst = monomerIndex;
 this.addMonomer (monomerIndex + monomerCount - 1);
-if (JU.Logger.debugging) JU.Logger.info ("Creating ProteinStructure " + this.strucNo + " " + type.getBioStructureTypeName (false) + " from " + this.monomerIndexFirst + " through " + this.monomerIndexLast + " in polymer " + apolymer);
+if (JU.Logger.debugging) JU.Logger.info ("Creating ProteinStructure " + this.strucNo + " " + type.getBioStructureTypeName (false) + " from " + this.monomerIndexFirst + " through " + this.monomerIndexLast);
 }, "JM.AlphaPolymer,J.c.STR,~N,~N");
 Clazz.defineMethod (c$, "addMonomer", 
 function (index) {
