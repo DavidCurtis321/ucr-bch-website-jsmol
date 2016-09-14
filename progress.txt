@@ -27,7 +27,7 @@ trypinhib [x]
 troponin [x]
 
 cholest [x]
-fatty
+fatty [x]
 bilayer
 phosphatidylcholine
 sphingo
