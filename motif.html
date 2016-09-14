@@ -37,13 +37,10 @@
                 Jmol.getApplet("myJmol3", Info);
                 Info.script = "script scripts/motif4.txt";
                 Jmol.getApplet("myJmol4", Info);
-                Info.script = "script scripts/motif5.txt";
-                Jmol.getApplet("myJmol5", Info);
                 $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
                 $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
                 $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
                 $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
-                $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
                 $("#myJmol1_appletinfotablediv").css({
                         "marginTop": "10",
                         "marginRight": "auto",
@@ -68,22 +65,14 @@
                         "marginBottom": "10",
                         "marginLeft": "auto"
                     });
-                $("#myJmol5_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
                 $("#resetBtn1").click(reset1);
                 $("#resetBtn2").click(reset2);
                 $("#resetBtn3").click(reset3);
                 $("#resetBtn4").click(reset4);
-                $("#resetBtn5").click(reset5);
                 $("#spinBox1").click(spin1);
                 $("#spinBox2").click(spin2);
                 $("#spinBox3").click(spin3);
                 $("#spinBox4").click(spin4);
-                $("#spinBox5").click(spin5);
             });
 
             function reset1(event){
@@ -100,10 +89,6 @@
 
             function reset4(event){
                 Jmol.script(myJmol4, "script scripts/motif4.txt")
-            };
-
-            function reset5(event){
-                Jmol.script(myJmol5, "script scripts/motif5.txt")
             };
 
             function spin1(event){
@@ -135,14 +120,6 @@
                     Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
                 } else {
                     Jmol.script(myJmol4, "spin off")
-                };
-            };
-
-            function spin5(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol5, "spin off")
                 };
             };
 
