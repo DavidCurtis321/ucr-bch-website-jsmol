@@ -1,0 +1,4 @@
+load pdb/cholesterol.pdb.gz
+
+moveTo 0 -416 644 -642 110.5
+spacefill on
