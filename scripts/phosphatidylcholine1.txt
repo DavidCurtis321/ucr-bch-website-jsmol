@@ -1,0 +1,6 @@
+load pdb/phosphatidylcholine.pdb.gz
+
+slab off
+moveTo 0 411 -463 785 60.3 100 0 2
+
+spacefill on

@@ -29,7 +29,7 @@ troponin [x]
 cholest [x]
 fatty [x]
 bilayer [x]
-phosphatidylcholine
+phosphatidylcholine [x]
 sphingo
 cox12
 transmem
