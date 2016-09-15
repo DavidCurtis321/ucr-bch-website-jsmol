@@ -1,0 +1,26 @@
+load pdb/cx2a.pdb.gz
+
+moveTo 0 303 199 932 63.2 250 -2 -7
+restrict 601
+color silver
+cpk
+color redorange
+select 385
+color cyan
+cpk
+select atomno=3529
+color red
+select 530
+color white
+cpk
+select atomno=4949
+color red
+select 120
+cpk
+color yellow
+select atomno=873
+color blue
+select atomno=874
+color blue
+select 702
+cpk

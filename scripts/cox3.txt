@@ -1,0 +1,193 @@
+load pdb/pth.pdb.gz
+
+moveTo 0 305 238 922 78.6 300 0 -7
+
+set bonds off
+set axes off
+set boundingbox off
+set unitcell off
+set bondmode and
+dots off
+
+# Avoid color Problems!
+select all
+color bonds none
+color backbone none
+color hbonds none
+color ssbonds none
+color ribbons none
+color white
+
+# Atoms
+select (atomno>=1) and (atomno<=721)
+color atoms cpk
+select (atomno>=722) and (atomno<=730)
+color atoms [255,255,0]
+select (atomno>=731) and (atomno<=732)
+color atoms [0,0,255]
+select (atomno>=733) and (atomno<=2888)
+color atoms cpk
+select (atomno>=2889) and (atomno<=2899)
+color atoms [0,255,255]
+select atomno=2900
+color atoms [255,0,0]
+select (atomno>=2901) and (atomno<=3528)
+color atoms cpk
+select atomno=3529
+color atoms [255,0,0]
+select (atomno>=3530) and (atomno<=4066)
+color atoms cpk
+select (atomno>=4067) and (atomno<=4071)
+color atoms black
+select (atomno>=4072) and (atomno<=4477)
+color atoms cpk
+select (atomno>=4479) and (atomno<=4521)
+color atoms [255,69,0]
+select (atomno>=4522) and (atomno<=4577)
+color atoms cpk
+select (atomno>=4578) and (atomno<=4579)
+color atoms [0,255,0]
+select atomno=4580
+color atoms [255,0,0]
+select atomno=4581
+color atoms [0,255,0]
+select atomno=4582
+color atoms [160,32,240]
+select (atomno>=4583) and (atomno<=4613)
+color atoms cpk
+select (atomno>=1) and (atomno<=721)
+spacefill off
+select (atomno>=722) and (atomno<=732)
+spacefill on
+select (atomno>=733) and (atomno<=2888)
+spacefill off
+select (atomno>=2889) and (atomno<=2900)
+spacefill on
+select (atomno>=2901) and (atomno<=4066)
+spacefill off
+select (atomno>=4067) and (atomno<=4071)
+spacefill on
+select (atomno>=4072) and (atomno<=4477)
+spacefill off
+select (atomno>=4479) and (atomno<=4521)
+spacefill on
+select (atomno>=4522) and (atomno<=4577)
+spacefill off
+select (atomno>=4578) and (atomno<=4582)
+spacefill on
+select (atomno>=4583) and (atomno<=4613)
+spacefill off
+
+# Bonds
+select all
+wireframe off
+select (atomno=4521) or (atomno==4519)
+wireframe on
+select (atomno=4520) or (atomno==4519)
+wireframe on
+select (atomno=4519) or (atomno==4518)
+wireframe on
+select (atomno=4518) or (atomno==4517)
+wireframe on
+select (atomno=4517) or (atomno==4514)
+wireframe on
+select (atomno=4516) or (atomno==4513)
+wireframe on
+select (atomno=4515) or (atomno==4480)
+wireframe on
+select (atomno=4515) or (atomno==4511)
+wireframe on
+select (atomno=4515) or (atomno==4514)
+wireframe on
+select (atomno=4514) or (atomno==4513)
+wireframe on
+select (atomno=4513) or (atomno==4512)
+wireframe on
+select (atomno=4512) or (atomno==4511)
+wireframe on
+select (atomno=4512) or (atomno==4483)
+wireframe on
+select (atomno=4510) or (atomno==4509)
+wireframe on
+select (atomno=4509) or (atomno==4506)
+wireframe on
+select (atomno=4508) or (atomno==4505)
+wireframe on
+select (atomno=4507) or (atomno==4483)
+wireframe on
+select (atomno=4507) or (atomno==4503)
+wireframe on
+select (atomno=4507) or (atomno==4506)
+wireframe on
+select (atomno=4506) or (atomno==4505)
+wireframe on
+select (atomno=4505) or (atomno==4504)
+wireframe on
+select (atomno=4504) or (atomno==4503)
+wireframe on
+select (atomno=4504) or (atomno==4482)
+wireframe on
+select (atomno=4502) or (atomno==4501)
+wireframe on
+select (atomno=4501) or (atomno==4498)
+wireframe on
+select (atomno=4500) or (atomno==4497)
+wireframe on
+select (atomno=4499) or (atomno==4495)
+wireframe on
+select (atomno=4499) or (atomno==4482)
+wireframe on
+select (atomno=4499) or (atomno==4498)
+wireframe on
+select (atomno=4498) or (atomno==4497)
+wireframe on
+select (atomno=4497) or (atomno==4496)
+wireframe on
+select (atomno=4496) or (atomno==4481)
+wireframe on
+select (atomno=4496) or (atomno==4495)
+wireframe on
+select (atomno=4494) or (atomno==4492)
+wireframe on
+select (atomno=4493) or (atomno==4492)
+wireframe on
+select (atomno=4492) or (atomno==4491)
+wireframe on
+select (atomno=4491) or (atomno==4490)
+wireframe on
+select (atomno=4490) or (atomno==4486)
+wireframe on
+select (atomno=4489) or (atomno==4487)
+wireframe on
+select (atomno=4488) or (atomno==4484)
+wireframe on
+select (atomno=4488) or (atomno==4487)
+wireframe on
+select (atomno=4488) or (atomno==4481)
+wireframe on
+select (atomno=4487) or (atomno==4486)
+wireframe on
+select (atomno=4486) or (atomno==4485)
+wireframe on
+select (atomno=4485) or (atomno==4480)
+wireframe on
+select (atomno=4485) or (atomno==4484)
+wireframe on
+select (atomno=4484) or (atomno==4479)
+wireframe on
+
+# Ribbons
+select all
+ribbons off
+
+# Backbone
+backbone off
+
+# Labels
+labels off
+
+# Monitors
+monitors off
+
+ssbonds off
+hbonds off

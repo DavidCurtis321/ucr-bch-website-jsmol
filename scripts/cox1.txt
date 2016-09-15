@@ -1,0 +1,1270 @@
+load pdb/cx2a.pdb.gz
+
+color silver
+moveTo 0 135 419 898 84.3 96 0 -2
+cpk off
+
+select 530
+color black
+
+select (atomno>=1) and (atomno<=491)
+color atoms silver
+select (atomno>=492) and (atomno<=498)
+color atoms [0,255,0]
+select (atomno>=499) and (atomno<=507)
+color atoms silver
+select (atomno>=508) and (atomno<=514)
+color atoms [0,255,0]
+select (atomno>=515) and (atomno<=534)
+color atoms silver
+select (atomno>=535) and (atomno<=555)
+color atoms [0,255,0]
+select (atomno>=556) and (atomno<=569)
+color atoms silver
+select (atomno>=570) and (atomno<=587)
+color atoms [0,255,0]
+select (atomno>=588) and (atomno<=609)
+color atoms silver
+select (atomno>=610) and (atomno<=621)
+color atoms [0,255,0]
+select (atomno>=622) and (atomno<=639)
+color atoms silver
+select (atomno>=640) and (atomno<=663)
+color atoms [0,255,0]
+select (atomno>=664) and (atomno<=683)
+color atoms silver
+select (atomno>=684) and (atomno<=691)
+color atoms [0,255,0]
+select (atomno>=692) and (atomno<=741)
+color atoms silver
+select (atomno>=742) and (atomno<=767)
+color atoms [0,255,0]
+select (atomno>=768) and (atomno<=784)
+color atoms silver
+select (atomno>=785) and (atomno<=802)
+color atoms [0,255,0]
+select (atomno>=803) and (atomno<=815)
+color atoms silver
+select (atomno>=816) and (atomno<=846)
+color atoms [0,255,0]
+select (atomno>=847) and (atomno<=855)
+color atoms silver
+select (atomno>=856) and (atomno<=863)
+color atoms [0,255,0]
+select (atomno>=864) and (atomno<=872)
+color atoms [255,255,0]
+select (atomno>=873) and (atomno<=874)
+color atoms [0,0,255]
+select (atomno>=881) and (atomno<=902)
+color atoms silver
+select (atomno>=903) and (atomno<=911)
+color atoms [0,255,0]
+select (atomno>=912) and (atomno<=1664)
+color atoms silver
+select (atomno>=1665) and (atomno<=1682)
+color atoms [0,255,0]
+select (atomno>=1683) and (atomno<=1695)
+color atoms silver
+select (atomno>=1696) and (atomno<=1716)
+color atoms [0,255,0]
+select (atomno>=1717) and (atomno<=1753)
+color atoms silver
+select (atomno>=1754) and (atomno<=1765)
+color atoms [0,255,0]
+select (atomno>=1766) and (atomno<=3091)
+color atoms silver
+select (atomno>=3092) and (atomno<=3100)
+color atoms [0,255,0]
+select (atomno>=3101) and (atomno<=3133)
+color atoms silver
+select (atomno>=3134) and (atomno<=3153)
+color atoms [0,255,0]
+select (atomno>=3154) and (atomno<=3166)
+color atoms silver
+select (atomno>=3167) and (atomno<=3183)
+color atoms [0,255,0]
+select (atomno>=3184) and (atomno<=3188)
+color atoms cpk
+select (atomno>=3189) and (atomno<=3202)
+color atoms [0,255,0]
+select (atomno>=3203) and (atomno<=3215)
+color atoms silver
+select (atomno>=3216) and (atomno<=3227)
+color atoms [0,255,0]
+select (atomno>=3228) and (atomno<=3240)
+color atoms silver
+select (atomno>=3241) and (atomno<=3249)
+color atoms [0,255,0]
+select (atomno>=3250) and (atomno<=3476)
+color atoms silver
+select (atomno>=3477) and (atomno<=3499)
+color atoms [0,255,0]
+select (atomno>=3500) and (atomno<=3508)
+color atoms silver
+select (atomno>=3509) and (atomno<=3517)
+color atoms [0,255,0]
+select (atomno>=3518) and (atomno<=3528)
+color atoms [0,255,255]
+select atomno=3529
+color atoms [255,0,0]
+select (atomno>=3530) and (atomno<=3531)
+color atoms [0,255,255]
+select (atomno>=3532) and (atomno<=3544)
+color atoms silver
+select (atomno>=3545) and (atomno<=3560)
+color atoms [0,255,0]
+select (atomno>=3561) and (atomno<=4389)
+color atoms silver
+select (atomno>=4390) and (atomno<=4401)
+color atoms [0,255,0]
+select (atomno>=4402) and (atomno<=4886)
+color atoms silver
+select (atomno>=4887) and (atomno<=4904)
+color atoms [0,255,0]
+select (atomno>=4905) and (atomno<=4913)
+color atoms silver
+select (atomno>=4914) and (atomno<=4931)
+color atoms [0,255,0]
+select (atomno>=4932) and (atomno<=4943)
+color atoms silver
+select atomno=4949
+color atoms [255,0,0]
+select (atomno>=4952) and (atomno<=4960)
+color atoms [0,255,0]
+select (atomno>=4961) and (atomno<=5440)
+color atoms silver
+select (atomno>=5442) and (atomno<=5484)
+color atoms [255,69,0]
+select (atomno>=4562) and (atomno<=4578)
+color atoms silver
+select (atomno>=1) and (atomno<=863)
+spacefill off
+select (atomno>=864) and (atomno<=874)
+spacefill on
+select (atomno>=881) and (atomno<=3517)
+spacefill off
+select (atomno>=3518) and (atomno<=3531)
+spacefill on
+select (atomno>=3532) and (atomno<=4943)
+spacefill off
+select (atomno>=4944) and (atomno<=4951)
+spacefill on
+select (atomno>=4952) and (atomno<=5440)
+spacefill off
+select (atomno>=5442) and (atomno<=5484)
+spacefill on
+select (atomno>=5569) and (atomno<=4578)
+spacefill off
+select [S58]
+cpk off
+
+select all
+wireframe off
+
+set strands 5
+cartoon on
+cartoon 100
+select atomno=2
+trace 100
+select atomno=10
+trace 100
+select atomno=21
+trace 100
+select atomno=28
+trace 100
+select atomno=35
+trace 100
+select atomno=42
+trace 100
+select atomno=50
+trace 100
+select atomno=61
+trace 100
+select atomno=68
+trace 100
+select atomno=75
+trace 100
+select atomno=87
+trace 100
+select atomno=98
+trace 100
+select atomno=115
+trace 100
+select atomno=120
+cartoon 380
+select atomno=130
+cartoon 380
+select atomno=137
+cartoon 380
+select atomno=146
+trace 100
+select atomno=154
+trace 100
+select atomno=163
+trace 100
+select atomno=168
+trace 100
+select atomno=180
+trace 100
+select atomno=189
+trace 100
+select atomno=201
+trace 100
+select atomno=215
+cartoon 380
+select atomno=228
+cartoon 380
+select atomno=235
+cartoon 380
+select atomno=244
+trace 100
+select atomno=251
+trace 100
+select atomno=260
+trace 100
+select atomno=277
+trace 100
+select atomno=286
+trace 100
+select atomno=291
+cartoon 380
+select atomno=303
+cartoon 380
+select atomno=317
+trace 100
+select atomno=322
+trace 100
+select atomno=332
+trace 100
+select atomno=342
+trace 100
+select atomno=349
+trace 100
+select atomno=358
+cartoon 380
+select atomno=367
+cartoon 380
+select atomno=374
+trace 100
+select atomno=384
+cartoon 380
+select atomno=396
+cartoon 380
+select atomno=405
+cartoon 380
+select atomno=414
+cartoon 380
+select atomno=431
+cartoon 380
+select atomno=440
+cartoon 380
+select atomno=453
+cartoon 380
+select atomno=462
+trace 100
+select atomno=471
+trace 100
+select atomno=480
+trace 100
+select atomno=493
+trace 100
+select atomno=500
+trace 100
+select atomno=509
+cartoon 380
+select atomno=516
+cartoon 380
+select atomno=527
+cartoon 380
+select atomno=536
+cartoon 380
+select atomno=544
+cartoon 380
+select atomno=557
+cartoon 380
+select atomno=571
+cartoon 380
+select atomno=580
+cartoon 380
+select atomno=589
+cartoon 380
+select atomno=598
+trace 100
+select atomno=611
+trace 100
+select atomno=623
+cartoon 380
+select atomno=636
+cartoon 380
+select atomno=641
+cartoon 380
+select atomno=649
+cartoon 380
+select atomno=665
+cartoon 380
+select atomno=676
+cartoon 380
+select atomno=685
+cartoon 380
+select atomno=693
+cartoon 380
+select atomno=704
+cartoon 380
+select atomno=715
+trace 100
+select atomno=724
+cartoon 380
+select atomno=731
+cartoon 380
+select atomno=743
+cartoon 380
+select atomno=752
+cartoon 380
+select atomno=769
+cartoon 380
+select atomno=777
+cartoon 380
+select atomno=786
+cartoon 380
+select atomno=795
+cartoon 380
+select atomno=804
+cartoon 380
+select atomno=817
+cartoon 380
+select atomno=831
+cartoon 380
+select atomno=839
+cartoon 380
+select atomno=848
+cartoon 380
+select atomno=857
+cartoon 380
+select atomno=865
+cartoon 380
+select atomno=882
+cartoon 380
+select atomno=890
+cartoon 380
+select atomno=904
+cartoon 380
+select atomno=913
+trace 100
+select atomno=922
+trace 100
+select atomno=931
+trace 100
+select atomno=939
+trace 100
+select atomno=946
+trace 100
+select atomno=953
+trace 100
+select atomno=962
+trace 100
+select atomno=976
+cartoon 380
+select atomno=987
+trace 100
+select atomno=995
+trace 100
+select atomno=1008
+cartoon 380
+select atomno=1022
+trace 100
+select atomno=1027
+trace 100
+select atomno=1041
+trace 100
+select atomno=1054
+trace 100
+select atomno=1062
+cartoon 380
+select atomno=1078
+cartoon 380
+select atomno=1088
+cartoon 380
+select atomno=1094
+cartoon 380
+select atomno=1106
+cartoon 380
+select atomno=1114
+trace 100
+select atomno=1124
+trace 100
+select atomno=1133
+trace 100
+select atomno=1141
+cartoon 380
+select atomno=1155
+trace 100
+select atomno=1169
+cartoon 380
+select atomno=1178
+trace 100
+select atomno=1195
+trace 100
+select atomno=1201
+trace 100
+select atomno=1210
+trace 100
+select atomno=1217
+trace 100
+select atomno=1224
+trace 100
+select atomno=1232
+trace 100
+select atomno=1238
+trace 100
+select atomno=1247
+trace 100
+select atomno=1256
+trace 100
+select atomno=1263
+trace 100
+select atomno=1270
+cartoon 380
+select atomno=1279
+trace 100
+select atomno=1286
+trace 100
+select atomno=1295
+cartoon 380
+select atomno=1300
+trace 100
+select atomno=1308
+trace 100
+select atomno=1321
+trace 100
+select atomno=1326
+trace 100
+select atomno=1337
+trace 100
+select atomno=1350
+trace 100
+select atomno=1360
+trace 100
+select atomno=1369
+trace 100
+select atomno=1376
+trace 100
+select atomno=1385
+trace 100
+select atomno=1393
+cartoon 380
+select atomno=1406
+cartoon 380
+select atomno=1416
+cartoon 380
+select atomno=1424
+cartoon 380
+select atomno=1433
+trace 100
+select atomno=1443
+trace 100
+select atomno=1456
+trace 100
+select atomno=1464
+trace 100
+select atomno=1473
+cartoon 380
+select atomno=1482
+trace 100
+select atomno=1499
+trace 100
+select atomno=1516
+trace 100
+select atomno=1526
+trace 100
+select atomno=1538
+trace 100
+select atomno=1547
+cartoon 380
+select atomno=1554
+trace 100
+select atomno=1563
+trace 100
+select atomno=1570
+trace 100
+select atomno=1582
+trace 100
+select atomno=1587
+cartoon 380
+select atomno=1595
+trace 100
+select atomno=1606
+cartoon 380
+select atomno=1615
+cartoon 380
+select atomno=1624
+cartoon 380
+select atomno=1636
+cartoon 380
+select atomno=1642
+cartoon 380
+select atomno=1654
+cartoon 380
+select atomno=1666
+cartoon 380
+select atomno=1672
+cartoon 380
+select atomno=1684
+cartoon 380
+select atomno=1697
+cartoon 380
+select atomno=1709
+cartoon 380
+select atomno=1718
+cartoon 380
+select atomno=1731
+cartoon 380
+select atomno=1743
+cartoon 380
+select atomno=1755
+trace 100
+select atomno=1767
+trace 100
+select atomno=1780
+trace 100
+select atomno=1789
+trace 100
+select atomno=1798
+trace 100
+select atomno=1811
+trace 100
+select atomno=1824
+trace 100
+select atomno=1841
+trace 100
+select atomno=1846
+trace 100
+select atomno=1853
+trace 100
+select atomno=1858
+cartoon 380
+select atomno=1870
+trace 100
+select atomno=1879
+trace 100
+select atomno=1896
+trace 100
+select atomno=1901
+trace 100
+select atomno=1910
+trace 100
+select atomno=1915
+trace 100
+select atomno=1928
+trace 100
+select atomno=1933
+trace 100
+select atomno=1941
+trace 100
+select atomno=1950
+trace 100
+select atomno=1959
+cartoon 380
+select atomno=1970
+cartoon 380
+select atomno=1983
+cartoon 380
+select atomno=1992
+cartoon 380
+select atomno=2006
+trace 100
+select atomno=2011
+trace 100
+select atomno=2021
+trace 100
+select atomno=2030
+trace 100
+select atomno=2039
+cartoon 380
+select atomno=2048
+cartoon 380
+select atomno=2065
+cartoon 380
+select atomno=2077
+cartoon 380
+select atomno=2090
+trace 100
+select atomno=2103
+trace 100
+select atomno=2112
+cartoon 380
+select atomno=2129
+trace 100
+select atomno=2138
+trace 100
+select atomno=2150
+trace 100
+select atomno=2163
+trace 100
+select atomno=2172
+trace 100
+select atomno=2177
+trace 100
+select atomno=2190
+cartoon 380
+select atomno=2199
+trace 100
+select atomno=2212
+trace 100
+select atomno=2226
+cartoon 380
+select atomno=2238
+cartoon 380
+select atomno=2246
+cartoon 380
+select atomno=2255
+trace 100
+select atomno=2260
+trace 100
+select atomno=2265
+cartoon 380
+select atomno=2275
+cartoon 380
+select atomno=2283
+cartoon 380
+select atomno=2297
+trace 100
+select atomno=2304
+trace 100
+select atomno=2311
+cartoon 380
+select atomno=2320
+trace 100
+select atomno=2328
+trace 100
+select atomno=2341
+trace 100
+select atomno=2350
+trace 100
+select atomno=2359
+trace 100
+select atomno=2371
+trace 100
+select atomno=2379
+trace 100
+select atomno=2389
+trace 100
+select atomno=2398
+trace 100
+select atomno=2407
+trace 100
+select atomno=2421
+trace 100
+select atomno=2428
+trace 100
+select atomno=2435
+trace 100
+select atomno=2448
+trace 100
+select atomno=2457
+trace 100
+select atomno=2464
+trace 100
+select atomno=2474
+trace 100
+select atomno=2485
+trace 100
+select atomno=2494
+trace 100
+select atomno=2506
+cartoon 380
+select atomno=2518
+trace 100
+select atomno=2524
+trace 100
+select atomno=2532
+trace 100
+select atomno=2537
+trace 100
+select atomno=2549
+trace 100
+select atomno=2559
+trace 100
+select atomno=2567
+trace 100
+select atomno=2579
+trace 100
+select atomno=2584
+trace 100
+select atomno=2593
+trace 100
+select atomno=2601
+cartoon 380
+select atomno=2608
+cartoon 380
+select atomno=2613
+cartoon 380
+select atomno=2622
+cartoon 380
+select atomno=2631
+cartoon 380
+select atomno=2640
+cartoon 380
+select atomno=2654
+cartoon 380
+select atomno=2660
+cartoon 380
+select atomno=2669
+cartoon 380
+select atomno=2678
+cartoon 380
+select atomno=2694
+cartoon 380
+select atomno=2703
+cartoon 380
+select atomno=2720
+cartoon 380
+select atomno=2730
+cartoon 380
+select atomno=2743
+cartoon 380
+select atomno=2755
+cartoon 380
+select atomno=2772
+cartoon 380
+select atomno=2780
+cartoon 380
+select atomno=2787
+cartoon 380
+select atomno=2796
+cartoon 380
+select atomno=2805
+cartoon 380
+select atomno=2814
+cartoon 380
+select atomno=2827
+trace 100
+select atomno=2839
+trace 100
+select atomno=2849
+trace 100
+select atomno=2862
+trace 100
+select atomno=2869
+trace 100
+select atomno=2879
+trace 100
+select atomno=2895
+trace 100
+select atomno=2900
+cartoon 380
+select atomno=2909
+cartoon 380
+select atomno=2919
+cartoon 380
+select atomno=2931
+cartoon 380
+select atomno=2940
+cartoon 380
+select atomno=2952
+cartoon 380
+select atomno=2964
+cartoon 380
+select atomno=2973
+cartoon 380
+select atomno=2981
+cartoon 380
+select atomno=2994
+cartoon 380
+select atomno=3003
+cartoon 380
+select atomno=3012
+cartoon 380
+select atomno=3021
+cartoon 380
+select atomno=3030
+cartoon 380
+select atomno=3035
+cartoon 380
+select atomno=3045
+cartoon 380
+select atomno=3054
+cartoon 380
+select atomno=3063
+cartoon 380
+select atomno=3076
+cartoon 380
+select atomno=3085
+cartoon 380
+select atomno=3093
+cartoon 380
+select atomno=3102
+cartoon 380
+select atomno=3112
+trace 100
+select atomno=3121
+cartoon 380
+select atomno=3135
+cartoon 380
+select atomno=3143
+cartoon 380
+select atomno=3155
+cartoon 380
+select atomno=3168
+cartoon 380
+select atomno=3177
+cartoon 380
+select atomno=3185
+trace 100
+select atomno=3190
+trace 100
+select atomno=3204
+trace 100
+select atomno=3217
+trace 100
+select atomno=3229
+trace 100
+select atomno=3242
+trace 100
+select atomno=3251
+trace 100
+select atomno=3264
+trace 100
+select atomno=3276
+trace 100
+select atomno=3285
+cartoon 380
+select atomno=3292
+cartoon 380
+select atomno=3302
+cartoon 380
+select atomno=3311
+trace 100
+select atomno=3320
+trace 100
+select atomno=3332
+trace 100
+select atomno=3343
+trace 100
+select atomno=3355
+trace 100
+select atomno=3367
+trace 100
+select atomno=3379
+trace 100
+select atomno=3391
+trace 100
+select atomno=3405
+trace 100
+select atomno=3417
+trace 100
+select atomno=3428
+trace 100
+select atomno=3445
+trace 100
+select atomno=3454
+cartoon 380
+select atomno=3460
+cartoon 380
+select atomno=3468
+cartoon 380
+select atomno=3478
+cartoon 380
+select atomno=3490
+cartoon 380
+select atomno=3501
+cartoon 380
+select atomno=3510
+cartoon 380
+select atomno=3519
+trace 100
+select atomno=3533
+trace 100
+select atomno=3546
+trace 100
+select atomno=3562
+cartoon 380
+select atomno=3574
+cartoon 380
+select atomno=3581
+cartoon 380
+select atomno=3590
+trace 100
+select atomno=3599
+trace 100
+select atomno=3606
+trace 100
+select atomno=3615
+trace 100
+select atomno=3624
+cartoon 380
+select atomno=3636
+trace 100
+select atomno=3647
+trace 100
+select atomno=3656
+trace 100
+select atomno=3666
+trace 100
+select atomno=3675
+trace 100
+select atomno=3687
+trace 100
+select atomno=3697
+cartoon 380
+select atomno=3711
+trace 100
+select atomno=3719
+cartoon 380
+select atomno=3731
+cartoon 380
+select atomno=3744
+cartoon 380
+select atomno=3756
+cartoon 380
+select atomno=3768
+trace 100
+select atomno=3777
+trace 100
+select atomno=3791
+trace 100
+select atomno=3801
+cartoon 380
+select atomno=3812
+cartoon 380
+select atomno=3820
+cartoon 380
+select atomno=3829
+cartoon 380
+select atomno=3838
+cartoon 380
+select atomno=3847
+cartoon 380
+select atomno=3857
+cartoon 380
+select atomno=3870
+trace 100
+select atomno=3875
+trace 100
+select atomno=3884
+cartoon 380
+select atomno=3893
+cartoon 380
+select atomno=3905
+cartoon 380
+select atomno=3917
+cartoon 380
+select atomno=3925
+cartoon 380
+select atomno=3935
+cartoon 380
+select atomno=3943
+cartoon 380
+select atomno=3955
+cartoon 380
+select atomno=3964
+trace 100
+select atomno=3981
+trace 100
+select atomno=3993
+trace 100
+select atomno=4002
+trace 100
+select atomno=4008
+cartoon 380
+select atomno=4013
+trace 100
+select atomno=4030
+trace 100
+select atomno=4038
+trace 100
+select atomno=4044
+trace 100
+select atomno=4049
+trace 100
+select atomno=4054
+trace 100
+select atomno=4071
+trace 100
+select atomno=4082
+cartoon 380
+select atomno=4090
+trace 100
+select atomno=4097
+trace 100
+select atomno=4106
+trace 100
+select atomno=4112
+trace 100
+select atomno=4120
+cartoon 380
+select atomno=4132
+cartoon 380
+select atomno=4138
+cartoon 380
+select atomno=4146
+cartoon 380
+select atomno=4152
+cartoon 380
+select atomno=4165
+cartoon 380
+select atomno=4171
+cartoon 380
+select atomno=4179
+cartoon 380
+select atomno=4188
+cartoon 380
+select atomno=4197
+cartoon 380
+select atomno=4209
+cartoon 380
+select atomno=4217
+cartoon 380
+select atomno=4234
+cartoon 380
+select atomno=4244
+trace 100
+select atomno=4253
+trace 100
+select atomno=4266
+trace 100
+select atomno=4280
+trace 100
+select atomno=4292
+cartoon 380
+select atomno=4300
+cartoon 380
+select atomno=4309
+cartoon 380
+select atomno=4320
+cartoon 380
+select atomno=4330
+cartoon 380
+select atomno=4344
+cartoon 380
+select atomno=4361
+cartoon 380
+select atomno=4374
+cartoon 380
+select atomno=4391
+trace 100
+select atomno=4403
+trace 100
+select atomno=4411
+trace 100
+select atomno=4420
+trace 100
+select atomno=4433
+trace 100
+select atomno=4440
+trace 100
+select atomno=4454
+trace 100
+select atomno=4463
+trace 100
+select atomno=4471
+cartoon 380
+select atomno=4483
+cartoon 380
+select atomno=4493
+cartoon 380
+select atomno=4503
+cartoon 380
+select atomno=4512
+cartoon 380
+select atomno=4521
+trace 100
+select atomno=4526
+trace 100
+select atomno=4536
+trace 100
+select atomno=4549
+cartoon 380
+select atomno=4559
+cartoon 380
+select atomno=4568
+cartoon 380
+select atomno=4574
+cartoon 380
+select atomno=4580
+cartoon 380
+select atomno=4590
+cartoon 380
+select atomno=4599
+cartoon 380
+select atomno=4612
+cartoon 380
+select atomno=4618
+cartoon 380
+select atomno=4627
+cartoon 380
+select atomno=4641
+trace 100
+select atomno=4649
+trace 100
+select atomno=4658
+cartoon 380
+select atomno=4667
+cartoon 380
+select atomno=4676
+cartoon 380
+select atomno=4684
+trace 100
+select atomno=4693
+cartoon 380
+select atomno=4703
+cartoon 380
+select atomno=4712
+cartoon 380
+select atomno=4726
+cartoon 380
+select atomno=4733
+cartoon 380
+select atomno=4739
+cartoon 380
+select atomno=4748
+cartoon 380
+select atomno=4757
+trace 100
+select atomno=4765
+trace 100
+select atomno=4775
+trace 100
+select atomno=4788
+trace 100
+select atomno=4795
+trace 100
+select atomno=4812
+trace 100
+select atomno=4819
+trace 100
+select atomno=4828
+trace 100
+select atomno=4834
+trace 100
+select atomno=4843
+trace 100
+select atomno=4855
+trace 100
+select atomno=4860
+cartoon 380
+select atomno=4870
+cartoon 380
+select atomno=4879
+cartoon 380
+select atomno=4888
+cartoon 380
+select atomno=4896
+cartoon 380
+select atomno=4906
+cartoon 380
+select atomno=4915
+cartoon 380
+select atomno=4920
+cartoon 380
+select atomno=4926
+cartoon 380
+select atomno=4933
+cartoon 380
+select atomno=4945
+cartoon 380
+select atomno=4953
+cartoon 380
+select atomno=4962
+cartoon 380
+select atomno=4975
+trace 100
+select atomno=4980
+trace 100
+select atomno=4989
+trace 100
+select atomno=4998
+trace 100
+select atomno=5003
+trace 100
+select atomno=5014
+cartoon 380
+select atomno=5021
+cartoon 380
+select atomno=5030
+cartoon 380
+select atomno=5037
+trace 100
+select atomno=5045
+trace 100
+select atomno=5052
+trace 100
+select atomno=5064
+trace 100
+select atomno=5078
+trace 100
+select atomno=5094
+trace 100
+select atomno=5107
+trace 100
+select atomno=5114
+trace 100
+select atomno=5122
+trace 100
+select atomno=5131
+trace 100
+select atomno=5143
+trace 100
+select atomno=5148
+trace 100
+select atomno=5153
+cartoon 380
+select atomno=5163
+cartoon 380
+select atomno=5171
+cartoon 380
+select atomno=5176
+cartoon 380
+select atomno=5188
+cartoon 380
+select atomno=5201
+cartoon 380
+select atomno=5210
+cartoon 380
+select atomno=5219
+trace 100
+select atomno=5230
+trace 100
+select atomno=5239
+trace 100
+select atomno=5245
+trace 100
+select atomno=5253
+cartoon 380
+select atomno=5262
+cartoon 380
+select atomno=5274
+cartoon 380
+select atomno=5282
+cartoon 380
+select atomno=5291
+cartoon 380
+select atomno=5300
+cartoon 380
+select atomno=5307
+cartoon 380
+select atomno=5318
+cartoon 380
+select atomno=5329
+trace 100
+select atomno=5337
+trace 100
+select atomno=5350
+trace 100
+select atomno=5355
+trace 100
+select atomno=5362
+trace 100
+select atomno=5369
+trace 100
+select atomno=5381
+trace 100
+select atomno=5390
+trace 100
+select atomno=5398
+trace 100
+select atomno=5410
+cartoon 380
+select atomno=5421
+trace 100
+select atomno=5429
+trace 100

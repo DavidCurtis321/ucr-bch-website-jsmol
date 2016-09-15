@@ -1,0 +1,208 @@
+load pdb/cx2a.pdb.gz
+moveTo 0 243 393 887 81.5 195 -7 -5
+select 701
+color cpk
+
+set axes off
+set boundingbox off
+set unitcell off
+set bondmode and
+dots off
+
+
+# Avoid color Problems!
+select all
+color bonds none
+color backbone none
+color hbonds none
+color ssbonds none
+color ribbons none
+color white
+
+# Atoms
+select (atomno>=1) and (atomno<=491)
+color atoms silver
+select (atomno>=492) and (atomno<=498)
+color atoms [0,255,0]
+select (atomno>=499) and (atomno<=507)
+color atoms silver
+select (atomno>=508) and (atomno<=514)
+color atoms [0,255,0]
+select (atomno>=515) and (atomno<=534)
+color atoms silver
+select (atomno>=535) and (atomno<=555)
+color atoms [0,255,0]
+select (atomno>=556) and (atomno<=569)
+color atoms silver
+select (atomno>=570) and (atomno<=587)
+color atoms [0,255,0]
+select (atomno>=588) and (atomno<=609)
+color atoms silver
+select (atomno>=610) and (atomno<=621)
+color atoms [0,255,0]
+select (atomno>=622) and (atomno<=639)
+color atoms silver
+select (atomno>=640) and (atomno<=663)
+color atoms [0,255,0]
+select (atomno>=664) and (atomno<=683)
+color atoms silver
+select (atomno>=684) and (atomno<=691)
+color atoms [0,255,0]
+select (atomno>=692) and (atomno<=741)
+color atoms silver
+select (atomno>=742) and (atomno<=767)
+color atoms [0,255,0]
+select (atomno>=768) and (atomno<=784)
+color atoms silver
+select (atomno>=785) and (atomno<=802)
+color atoms [0,255,0]
+select (atomno>=803) and (atomno<=815)
+color atoms silver
+select (atomno>=816) and (atomno<=846)
+color atoms [0,255,0]
+select (atomno>=847) and (atomno<=855)
+color atoms silver
+select (atomno>=856) and (atomno<=863)
+color atoms [0,255,0]
+select (atomno>=864) and (atomno<=872)
+color atoms [255,255,0]
+select (atomno>=873) and (atomno<=874)
+color atoms [0,0,255]
+select (atomno>=881) and (atomno<=902)
+color atoms silver
+select (atomno>=903) and (atomno<=911)
+color atoms [0,255,0]
+select (atomno>=912) and (atomno<=1664)
+color atoms silver
+select (atomno>=1665) and (atomno<=1682)
+color atoms [0,255,0]
+select (atomno>=1683) and (atomno<=1695)
+color atoms silver
+select (atomno>=1696) and (atomno<=1716)
+color atoms [0,255,0]
+select (atomno>=1717) and (atomno<=1753)
+color atoms silver
+select (atomno>=1754) and (atomno<=1765)
+color atoms [0,255,0]
+select (atomno>=1766) and (atomno<=3091)
+color atoms silver
+select (atomno>=3092) and (atomno<=3100)
+color atoms [0,255,0]
+select (atomno>=3101) and (atomno<=3133)
+color atoms silver
+select (atomno>=3134) and (atomno<=3153)
+color atoms [0,255,0]
+select (atomno>=3154) and (atomno<=3166)
+color atoms silver
+select (atomno>=3167) and (atomno<=3183)
+color atoms [0,255,0]
+select (atomno>=3184) and (atomno<=3188)
+color atoms silver
+select (atomno>=3189) and (atomno<=3202)
+color atoms [0,255,0]
+select (atomno>=3203) and (atomno<=3215)
+color atoms silver
+select (atomno>=3216) and (atomno<=3227)
+color atoms [0,255,0]
+select (atomno>=3228) and (atomno<=3240)
+color atoms silver
+select (atomno>=3241) and (atomno<=3249)
+color atoms [0,255,0]
+select (atomno>=3250) and (atomno<=3476)
+color atoms silver
+select (atomno>=3477) and (atomno<=3499)
+color atoms [0,255,0]
+select (atomno>=3500) and (atomno<=3508)
+color atoms silver
+select (atomno>=3509) and (atomno<=3517)
+color atoms [0,255,0]
+select (atomno>=3518) and (atomno<=3528)
+color atoms [0,255,255]
+select atomno=3529
+color atoms [255,0,0]
+select (atomno>=3530) and (atomno<=3531)
+color atoms [0,255,255]
+select (atomno>=3532) and (atomno<=3544)
+color atoms silver
+select (atomno>=3545) and (atomno<=3560)
+color atoms [0,255,0]
+select (atomno>=3561) and (atomno<=4389)
+color atoms silver
+select (atomno>=4390) and (atomno<=4401)
+color atoms [0,255,0]
+select (atomno>=4402) and (atomno<=4886)
+color atoms silver
+select (atomno>=4887) and (atomno<=4904)
+color atoms [0,255,0]
+select (atomno>=4905) and (atomno<=4913)
+color atoms silver
+select (atomno>=4914) and (atomno<=4931)
+color atoms [0,255,0]
+select (atomno>=4932) and (atomno<=4943)
+color atoms cpk
+select (atomno>=4944) and (atomno<=4948)
+color atoms [255,255,255]
+select atomno=4949
+color atoms [255,0,0]
+select (atomno>=4950) and (atomno<=4951)
+color atoms [255,255,255]
+select (atomno>=4952) and (atomno<=4960)
+color atoms [0,255,0]
+select (atomno>=4961) and (atomno<=5440)
+color atoms silver
+select (atomno>=5442) and (atomno<=5484)
+color atoms [255,69,0]
+select (atomno>=5569) and (atomno<=4578)
+color atoms silver
+select (atomno>=1) and (atomno<=863)
+spacefill off
+select (atomno>=864) and (atomno<=874)
+spacefill on
+select (atomno>=881) and (atomno<=3517)
+spacefill off
+select (atomno>=3518) and (atomno<=3531)
+spacefill on
+select (atomno>=3532) and (atomno<=4943)
+spacefill off
+select (atomno>=4944) and (atomno<=4951)
+spacefill on
+select (atomno>=4952) and (atomno<=5440)
+spacefill off
+select (atomno>=5442) and (atomno<=5596)
+spacefill on
+select (atomno>=4562) and (atomno<=4578)
+spacefill off
+
+# Bonds
+select all
+wireframe off
+
+# Ribbons
+ribbons off
+
+# Backbone
+backbone 80
+
+# Labels
+labels off
+
+# Monitors
+monitors off
+
+ssbonds off
+hbonds off
+
+select (atomno>=4961) and (atomno<=5596)
+color atoms cpk
+select (atomno>=4944) and (atomno<=4948)
+color atoms [255,255,255]
+select atomno=4949
+color atoms [255,0,0]
+select (atomno>=4950) and (atomno<=4951)
+color atoms [255,255,255]
+select (atomno>=4952) and (atomno<=4960)
+color atoms [0,255,0]
+select [HEM]
+color red
+select 532-582
+color silver
