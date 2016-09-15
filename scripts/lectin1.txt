@@ -1,0 +1,18 @@
+load pdb/1slc.pdb.gz
+moveTo 0 634 -769 -75 81.6 140
+
+wireframe off
+cpk off
+select :a
+color lime
+spacefill on
+select :b
+color blue
+spacefill on
+select hetero and not water
+spacefill on
+color yellow
+select 362 or 352
+color red
+select atomno==27
+center selected

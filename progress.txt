@@ -38,7 +38,7 @@ monosacc [x]
 disacc [x]
 heparin [x]
 
-lectin
+lectin [x]
 lysozyme
 
 adna [x]
