@@ -35,7 +35,7 @@ cox12 [x]
 transmem [x]
 
 monosacc [x]
-disacc
+disacc [x]
 heparin
 
 lectin

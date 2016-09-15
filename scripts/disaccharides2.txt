@@ -1,0 +1,8 @@
+load pdb/cellobios.pdb.gz
+moveTo 0 999 27 36 178.1
+select all
+center selected
+select carbon
+color silver
+select all
+wireframe 0.3

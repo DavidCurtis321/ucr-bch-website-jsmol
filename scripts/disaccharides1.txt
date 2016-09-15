@@ -1,0 +1,8 @@
+load pdb/maltose.pdb.gz
+moveTo 0 982 58 -180 150.9
+select all
+center selected
+select carbon
+color silver
+select all
+wireframe 0.3
