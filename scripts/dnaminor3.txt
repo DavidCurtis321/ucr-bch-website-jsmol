@@ -1,0 +1,22 @@
+load pdb/2pug.pdb.gz
+moveTo 0 -645 -360 -674 147.3 274
+model 0
+
+wireframe off
+cpk off
+
+select :B
+spacefill on
+
+select :A/1
+color lime
+select :A/2
+color magenta
+select 4-23
+cartoons on
+
+select 48-56
+color cyan
+cartoons on
+
+center visible

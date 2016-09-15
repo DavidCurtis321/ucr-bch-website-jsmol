@@ -1,0 +1,18 @@
+load pdb/2pug.pdb.gz
+model 0
+
+moveTo 0 723 234 650 180 165 1.2 -15.5
+hide water
+wireframe off
+cartoons off
+spacefill off
+
+select :B
+spacefill on
+
+select :A/1
+color lime
+select :A/2
+color magenta
+select 4-23
+spacefill on

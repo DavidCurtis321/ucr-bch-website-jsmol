@@ -1,0 +1,23 @@
+load pdb/2pug.pdb.gz
+model 0
+
+slab off
+moveTo 0 -1000 -1 14 178.9 100 4 0
+
+wireframe off
+cpk off
+
+select :A/1
+cartoons on
+color lime
+
+select :A/2
+cartoons on
+color magenta
+
+select [HPA]
+spacefill on
+color yellow
+
+select :B and not water
+spacefill on

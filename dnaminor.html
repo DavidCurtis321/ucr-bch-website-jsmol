@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DNA-minor</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <script>
+            var Info = {
+                color: "#FFFFFF",
+                height: 400,
+                width: "100%",
+                script: "script scripts/dnaminor1.txt",
+                use: "HTML5",
+                j2sPath: "jsmol/j2s",
+                serverURL: "jsmol/php/jsmol.php",
+                disableInitialConsole: true,
+                debug: false,
+            };
+
+            $(document).ready(function(){
+                Jmol.setDocument(0);
+                Jmol.getApplet("myJmol1", Info);
+                Info.script = "script scripts/dnaminor2.txt";
+                Jmol.getApplet("myJmol2", Info);
+                Info.script = "script scripts/dnaminor3.txt";
+                Jmol.getApplet("myJmol3", Info);
+                Info.script = "script scripts/dnaminor4.txt";
+                Jmol.getApplet("myJmol4", Info);
+                Info.script = "script scripts/dnaminor5.txt";
+                Jmol.getApplet("myJmol5", Info);
+                $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+                $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+                $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
+                $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
+                $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
+                $("#myJmol1_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol2_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol3_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol4_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol5_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#resetBtn1").click(reset1);
+                $("#resetBtn2").click(reset2);
+                $("#resetBtn3").click(reset3);
+                $("#resetBtn4").click(reset4);
+                $("#resetBtn5").click(reset5);
+                $("#spinBox1").click(spin1);
+                $("#spinBox2").click(spin2);
+                $("#spinBox3").click(spin3);
+                $("#spinBox4").click(spin4);
+                $("#spinBox5").click(spin5);
+            });
+
+            function reset1(event){
+                Jmol.script(myJmol1, "script scripts/dnaminor1.txt")
+            };
+
+            function reset2(event){
+                Jmol.script(myJmol2, "script scripts/dnaminor2.txt")
+            };
+
+            function reset3(event){
+                Jmol.script(myJmol3, "script scripts/dnaminor3.txt")
+            };
+
+            function reset4(event){
+                Jmol.script(myJmol4, "script scripts/dnaminor4.txt")
+            };
+
+            function reset5(event){
+                Jmol.script(myJmol5, "script scripts/dnaminor5.txt")
+            };
+
+            function spin1(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol1, "spin off")
+                };
+            };
+
+            function spin2(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol2, "spin off")
+                };
+            };
+
+            function spin3(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol3, "spin off")
+                };
+            };
+
+            function spin4(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol4, "spin off")
+                };
+            };
+
+            function spin5(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol5, "spin off")
+                };
+            };
+
+            Jmol._alertNoBinary = false;
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>DNA-minor</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Introduction</h3>
+                    <p>
+                        These scripts show the structure of the complex between
+                        the DNA-binding protein PurR and its target DNA. PurR
+                        acts a repressor for several genes that make purines.
+                        (Based on 2pug.pdb, Lu et al. (1998) Biochemistry
+                        <strong>37</strong>: 971-982)
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>DNA-minor 1</h3>
+                            <p>
+                                Here we see PurR bound to DNA. The dimeric
+                                protein (<span style="color:magenta;">magenta
+                                </span> and <span style="color:lime;">green
+                                </span>) binds to DNA via the N-terminal domain.
+                                The large C-terminal domain is responsible for
+                                dimer formation.  The co-repressor,
+                                <span style="color:gold;">hypoxanthine</span>
+                                (spacefill) stablizes dimer formation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox1"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>DNA-minor 2</h3>
+                            <p>
+                                The repressor binds to the major groove of the
+                                DNA through a helix-turn-helix motif
+                                (spacefill).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox2"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>DNA-minor 3</h3>
+                            <p>
+                                In addition, another <span style="color:cyan;">
+                                helix</span> from each monomer binds to the
+                                minor groove.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn3" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox3"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>DNA-minor 4</h3>
+                            <p>
+                                The interaction with the minor groove causes the
+                                minor groove to unwind, as shown by the space
+                                in the center of the groove.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn4" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox4"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>DNA-minor 5</h3>
+                            <p>
+                                The DNA is also severely bent around the minor
+                                groove, as shown here.  These structural changes
+                                are somehow responsible for silencing gene
+                                expression.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn5" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox5"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>
+</html>

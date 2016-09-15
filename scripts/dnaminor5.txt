@@ -1,0 +1,10 @@
+load pdb/2pug.pdb.gz
+model 0
+
+spacefill off
+wireframe off
+select :B
+spacefill on
+moveTo 0 -200 375 -905 91.9 235
+
+center visible

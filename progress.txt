@@ -46,7 +46,7 @@ arna [x]
 bdna [x]
 zdna [x]
 basepairing [x]
-dnaminor
+dnaminor [x]
 
 prodna
 transcrip
