@@ -1,0 +1,29 @@
+load pdb/1lzc.pdb.gz
+
+slab off
+moveTo 0 749 523 406 172.9 200
+wireframe off
+spacefill on
+select water
+spacefill off
+SELECT HETERO AND NOT WATER
+SPACEFILL ON
+COLOR YELLOW
+SELECT ALL
+SPACEFILL ON
+SELECT WATER
+SPACEFILL OFF
+SELECT 35 OR 52
+COLOR LIME
+SELECT ATOMNO==1047
+CENTER SELECTED
+slab off
+reset
+moveto 1 749 523 406 172.9 200
+select carbon
+color silver
+select hetero
+color yellow
+select 35 or 52
+color lime
+zoom 200

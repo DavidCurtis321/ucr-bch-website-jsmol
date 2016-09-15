@@ -1,0 +1,16 @@
+load pdb/9lyz.pdb.gz
+
+moveTo 0 472 -878 -82 132.6 200
+wireframe 0.25
+slab off
+rotate z 126
+rotate y 48
+rotate x -11
+translate x 23
+translate y 28
+zoom 200
+restrict 1
+wireframe 0.25
+center selected
+select carbon
+color silver

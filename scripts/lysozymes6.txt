@@ -1,0 +1,13 @@
+load pdb/9lyz.pdb.gz
+
+restrict 3
+select all
+wireframe 0.25
+select atomno==30 or atomno==31 or atomno==32 or atomno=33
+color green
+spacefill on
+select atomno==39 or atomno==44
+color magenta
+spacefill on
+slab off
+moveTo 0 -153 968 200 146.0 100 -1 -13

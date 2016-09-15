@@ -1,0 +1,21 @@
+load pdb/1lzc.pdb.gz
+
+slab off
+moveTo 0 234 519 823 166.2
+wireframe off
+spacefill on
+select water
+spacefill off
+SELECT HETERO AND NOT WATER
+SPACEFILL ON
+COLOR YELLOW
+SELECT ALL
+SPACEFILL ON
+SELECT WATER
+SPACEFILL OFF
+SELECT 35 OR 52
+COLOR LIME
+select carbon
+color silver
+select hetero
+color yellow

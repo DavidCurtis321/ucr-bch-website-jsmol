@@ -39,7 +39,7 @@ disacc [x]
 heparin [x]
 
 lectin [x]
-lysozyme
+lysozyme [x]
 
 adna [x]
 arna [x]

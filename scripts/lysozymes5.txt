@@ -1,0 +1,9 @@
+load pdb/9lyz.pdb.gz
+
+slab off
+zoom 200
+restrict 3
+wireframe 0.25
+select carbon
+color silver
+moveto 0 -9 -975 -220 99 156 -29 -21
