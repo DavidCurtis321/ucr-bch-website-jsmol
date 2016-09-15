@@ -1,0 +1,10 @@
+load pdb/1glu.pdb.gz
+
+slab off
+moveTo 0 -302 935 -184 177.9 476 -8 -20
+wireframe off
+cpk off
+select :c and 4
+spacefill on
+select :a and 466
+spacefill on

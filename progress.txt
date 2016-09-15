@@ -48,7 +48,7 @@ zdna [x]
 basepairing [x]
 dnaminor [x]
 
-prodna
+prodna [x]
 transcrip
 
 iganti

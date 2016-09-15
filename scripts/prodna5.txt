@@ -1,0 +1,22 @@
+load pdb/1glu.pdb.gz
+
+slab off
+moveTo 0 -549 835 -43 178.2 350 -24 -3
+wireframe off
+cpk off
+select :c and 4
+spacefill on
+select :a and 466
+spacefill on
+
+spacefill off
+select :c
+spacefill off
+select :a and 461
+spacefill on
+select atomno==2053
+center selected
+spacefill on
+color lime
+select :c and 7
+spacefill on

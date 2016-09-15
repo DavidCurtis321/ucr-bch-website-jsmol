@@ -1,0 +1,12 @@
+load pdb/1d66.pdb.gz
+
+slab off
+moveTo 0 5 994 105 126.2 125
+wireframe off
+cpk off
+select :d
+spacefill on
+color lime
+select :e
+spacefill on
+color blue
