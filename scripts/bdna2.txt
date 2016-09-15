@@ -1,0 +1,12 @@
+load pdb/1bna.pdb.gz
+set ambient 20
+set specular on
+reset
+moveTo 0 133 -236 -963 53.8 110 0 1
+spacefill on
+select water
+spacefill off
+SELECT :A AND BACKBONE
+COLOR YELLOW
+SELECT :B AND BACKBONE
+COLOR lime
