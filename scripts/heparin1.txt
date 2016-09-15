@@ -1,0 +1,5 @@
+load pdb/1hpn.pdb.gz
+
+slab off
+moveTo 0 905 412 -102 139.8
+spacefill on
