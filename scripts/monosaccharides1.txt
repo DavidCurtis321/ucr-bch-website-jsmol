@@ -1,0 +1,6 @@
+load pdb/monosaccharides_beta.pdb.gz
+
+moveTo 0 -226 -704 -673 145.0
+wireframe 0.25
+select carbon
+color silver

@@ -1,0 +1,4 @@
+load pdb/monosaccharides_alpha.pdb.gz
+
+wireframe 0.25
+moveTo 0 -228 -772 -567 110.6

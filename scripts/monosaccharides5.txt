@@ -1,0 +1,10 @@
+load pdb/monosaccharides_alpha.pdb.gz
+
+wireframe 0.25
+moveTo 0 -298 -789 -537 109.8
+select [h11] or [o1]
+color yellow
+select [h21] or [o2]
+color magenta
+select all
+spacefill on

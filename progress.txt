@@ -34,7 +34,7 @@ sphingo [x]
 cox12 [x]
 transmem [x]
 
-monosacc
+monosacc [x]
 disacc
 heparin
 
