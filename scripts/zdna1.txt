@@ -1,0 +1,10 @@
+load pdb/2dcg.pdb.gz
+
+moveTo 0 -786 429 445 107.1
+spacefill on
+hide water or [SPM]
+
+SELECT :a and backbone
+COLOR YELLOW
+SELECT :b and backbone
+COLOR lime

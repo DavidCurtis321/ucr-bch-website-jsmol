@@ -44,7 +44,7 @@ lysozyme [x]
 adna [x]
 arna [x]
 bdna [x]
-zdna
+zdna [x]
 basepairing [x]
 dnaminor
 
