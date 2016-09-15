@@ -1,12 +1,12 @@
-Clazz.declarePackage ("J.adapter.readers.quantum");
-Clazz.load (["J.adapter.readers.quantum.BasisFunctionReader"], "J.adapter.readers.quantum.SpartanReader", ["java.lang.Float", "java.util.Hashtable", "J.adapter.readers.quantum.SpartanArchive"], function () {
-c$ = Clazz.declareType (J.adapter.readers.quantum, "SpartanReader", J.adapter.readers.quantum.BasisFunctionReader);
+Clazz.declarePackage ("J.adapter.readers.spartan");
+Clazz.load (["J.adapter.readers.quantum.BasisFunctionReader"], "J.adapter.readers.spartan.SpartanReader", ["java.lang.Float", "java.util.Hashtable", "J.adapter.readers.spartan.SpartanArchive"], function () {
+c$ = Clazz.declareType (J.adapter.readers.spartan, "SpartanReader", J.adapter.readers.quantum.BasisFunctionReader);
 Clazz.overrideMethod (c$, "initializeReader", 
 function () {
 var cartesianHeader = "Cartesian Coordinates (Ang";
 if (this.isSpartanArchive (cartesianHeader)) {
 this.moData =  new java.util.Hashtable ();
-var spartanArchive =  new J.adapter.readers.quantum.SpartanArchive (this, "", null);
+var spartanArchive =  new J.adapter.readers.spartan.SpartanArchive (this, "", null);
 var ac = spartanArchive.readArchive (this.line, true, 0, true);
 if (ac > 0) this.asc.setAtomSetName ("Spartan file");
 } else if (this.line.indexOf (cartesianHeader) >= 0) {

@@ -1,9 +1,9 @@
-Clazz.declarePackage ("J.io");
-Clazz.load (null, "J.io.JmolBinary", ["java.io.BufferedInputStream", "java.util.Hashtable", "$.StringTokenizer", "JU.Lst", "$.PT", "$.Rdr", "$.SB", "J.api.Interface", "JU.Escape", "$.Logger"], function () {
+Clazz.declarePackage ("J.adapter.readers.spartan");
+Clazz.load (null, "J.adapter.readers.spartan.SpartanUtil", ["java.io.BufferedInputStream", "java.util.Hashtable", "$.StringTokenizer", "JU.Lst", "$.PT", "$.Rdr", "$.SB", "J.api.Interface", "JU.Escape", "$.Logger"], function () {
 c$ = Clazz.decorateAsClass (function () {
 this.fm = null;
 Clazz.instantialize (this, arguments);
-}, J.io, "JmolBinary");
+}, J.adapter.readers.spartan, "SpartanUtil");
 Clazz.makeConstructor (c$, 
 function () {
 });
@@ -12,25 +12,7 @@ function (fm) {
 this.fm = fm;
 return this;
 }, "JV.FileManager");
-Clazz.defineMethod (c$, "getSpartanData", 
-function (is, zipDirectory) {
-var data =  new JU.SB ();
-data.append ("Zip File Directory: ").append ("\n").append (JU.Escape.eAS (zipDirectory, true)).append ("\n");
-var fileData =  new java.util.Hashtable ();
-this.fm.vwr.getJzt ().getAllZipData (is,  Clazz.newArray (-1, []), "", "Molecule", "__MACOSX", fileData);
-var prefix = "|";
-var outputData = fileData.get (prefix + "output");
-if (outputData == null) outputData = fileData.get ((prefix = "|" + zipDirectory[1]) + "output");
-data.append (outputData);
-var files = this.getSpartanFileList (prefix, this.getSpartanDirs (outputData));
-for (var i = 2; i < files.length; i++) {
-var name = files[i];
-if (fileData.containsKey (name)) data.append (fileData.get (name));
- else data.append (name + "\n");
-}
-return data;
-}, "java.io.InputStream,~A");
-Clazz.defineMethod (c$, "getSpartanFileList", 
+Clazz.defineMethod (c$, "getFileList", 
 function (name, isTypeCheckOnly) {
 var pt = name.lastIndexOf (".spardir");
 var info = null;
@@ -69,6 +51,24 @@ if (this.fm.spardirCache == null) this.fm.spardirCache =  new java.util.Hashtabl
 this.fm.spardirCache.put (name00.$replace ('\\', '/'), s.getBytes ());
 return JU.Rdr.getBR (s);
 }, "~S,~B");
+Clazz.defineMethod (c$, "getData", 
+function (is, zipDirectory) {
+var data =  new JU.SB ();
+data.append ("Zip File Directory: ").append ("\n").append (JU.Escape.eAS (zipDirectory, true)).append ("\n");
+var fileData =  new java.util.Hashtable ();
+this.fm.vwr.getJzt ().getAllZipData (is,  Clazz.newArray (-1, []), "", "Molecule", "__MACOSX", fileData);
+var prefix = "|";
+var outputData = fileData.get (prefix + "output");
+if (outputData == null) outputData = fileData.get ((prefix = "|" + zipDirectory[1]) + "output");
+data.append (outputData);
+var files = this.getSpartanFileList (prefix, this.getSpartanDirs (outputData));
+for (var i = 2; i < files.length; i++) {
+var name = files[i];
+if (fileData.containsKey (name)) data.append (fileData.get (name));
+ else data.append (name + "\n");
+}
+return data;
+}, "java.io.InputStream,~A");
 Clazz.defineMethod (c$, "spartanFileList", 
  function (name, outputFileData) {
 var dirNums = this.getSpartanDirs (outputFileData);
@@ -161,13 +161,13 @@ return path;
 bis = t;
 if (JU.Rdr.isCompoundDocumentS (bis)) {
 var doc = J.api.Interface.getInterface ("JU.CompoundDocument", this.fm.vwr, "file");
-doc.setStream (this.fm.vwr.getJzt (), bis, true);
+doc.setDocStream (this.fm.vwr.getJzt (), bis);
 doc.getAllDataMapped (name, "Molecule", fileData);
 } else if (JU.Rdr.isZipS (bis)) {
 this.fm.vwr.getJzt ().getAllZipData (bis, subFileList, name, "Molecule", "__MACOSX", fileData);
 } else if (asBinaryString) {
 var bd = J.api.Interface.getInterface ("JU.BinaryDocument", this.fm.vwr, "file");
-bd.setStream (this.fm.vwr.getJzt (), bis, false);
+bd.setStream (bis, false);
 sb =  new JU.SB ();
 if (header != null) sb.append ("BEGIN Directory Entry " + path + "\n");
 try {

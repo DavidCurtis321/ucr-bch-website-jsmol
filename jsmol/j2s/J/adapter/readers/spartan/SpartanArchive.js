@@ -1,5 +1,5 @@
-Clazz.declarePackage ("J.adapter.readers.quantum");
-Clazz.load (null, "J.adapter.readers.quantum.SpartanArchive", ["java.lang.Boolean", "$.Float", "java.util.Hashtable", "JU.AU", "$.Lst", "$.PT", "$.V3", "J.adapter.smarter.AtomSetCollectionReader", "$.Bond", "JU.Logger"], function () {
+Clazz.declarePackage ("J.adapter.readers.spartan");
+Clazz.load (null, "J.adapter.readers.spartan.SpartanArchive", ["java.lang.Boolean", "$.Float", "java.util.Hashtable", "JU.AU", "$.Lst", "$.PT", "$.V3", "J.adapter.smarter.AtomSetCollectionReader", "$.Bond", "JU.Logger"], function () {
 c$ = Clazz.decorateAsClass (function () {
 this.modelCount = 0;
 this.ac = 0;
@@ -14,7 +14,7 @@ this.r = null;
 this.modelAtomCount = 0;
 this.line = null;
 Clazz.instantialize (this, arguments);
-}, J.adapter.readers.quantum, "SpartanArchive");
+}, J.adapter.readers.spartan, "SpartanArchive");
 Clazz.makeConstructor (c$, 
 function (r, bondData, endCheck) {
 this.initialize (r, bondData);

@@ -1,11 +1,11 @@
-Clazz.declarePackage ("J.adapter.readers.quantum");
-Clazz.load (["J.adapter.readers.quantum.BasisFunctionReader"], "J.adapter.readers.quantum.SpartanInputReader", ["JU.PT", "J.adapter.smarter.Bond", "JU.Logger"], function () {
+Clazz.declarePackage ("J.adapter.readers.spartan");
+Clazz.load (["J.adapter.readers.quantum.BasisFunctionReader"], "J.adapter.readers.spartan.SpartanInputReader", ["JU.PT", "J.adapter.smarter.Bond", "JU.Logger"], function () {
 c$ = Clazz.decorateAsClass (function () {
 this.modelAtomCount = 0;
 this.bondData = "";
 this.constraints = "";
 Clazz.instantialize (this, arguments);
-}, J.adapter.readers.quantum, "SpartanInputReader", J.adapter.readers.quantum.BasisFunctionReader);
+}, J.adapter.readers.spartan, "SpartanInputReader", J.adapter.readers.quantum.BasisFunctionReader);
 Clazz.defineMethod (c$, "readInputRecords", 
 function () {
 var ac0 = this.asc.ac;
