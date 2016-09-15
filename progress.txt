@@ -31,8 +31,8 @@ fatty [x]
 bilayer [x]
 phosphatidylcholine [x]
 sphingo [x]
-cox12
-transmem
+cox12 [x]
+transmem [x]
 
 monosacc
 disacc

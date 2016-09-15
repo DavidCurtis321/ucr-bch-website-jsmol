@@ -1,0 +1,20 @@
+load pdb/2brd.pdb.gz
+
+slab off
+set bonds off
+set axes off
+set boundingbox off
+set unitcell off
+set bondmode and
+dots off
+
+zoom 135
+rotate x 90
+moveTo 0 -1000 -1 -31 82.5 135
+spacefill on
+select carbon
+color silver
+select protein
+color lime
+select nitrogen
+color lime

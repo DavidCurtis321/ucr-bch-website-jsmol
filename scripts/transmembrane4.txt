@@ -1,0 +1,40 @@
+load pdb/2brd.pdb.gz
+
+moveTo 0 -555 -558 -617 128.9 135
+select carbon
+color silver
+slab off
+set bonds off
+set axes off
+set boundingbox off
+set unitcell off
+set bondmode and
+dots off
+zoom 135
+spacefill on
+select protein
+color lime
+restrict 76-103
+translate y -6
+translate x 8
+select 86
+center selected
+select backbone
+color white
+select sidechain and polar
+color yellow
+select sidechain and hydrophobic
+color red
+restrict 76-103
+translate y -6
+translate x 8
+select 86
+center selected
+select 261 or 266
+spacefill on
+select all
+spacefill on
+select 228
+color white
+select [tyr] 131
+color yellow
