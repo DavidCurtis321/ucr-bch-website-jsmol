@@ -1,0 +1,13 @@
+load pdb/1pkm.pdb.gz
+
+wireframe off
+cartoons on
+color silver
+reset
+moveto 0 572 -655 495 154.4 125
+slab off
+select 1-44
+color yellow
+zoom 125
+select all
+spacefill off

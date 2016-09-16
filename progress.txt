@@ -57,7 +57,7 @@ gfp [x]
 newtim [x]
 collagen [x]
 porin [x]
-proteindomains
+proteindomains [x]
 silk
 
 hexokinase
