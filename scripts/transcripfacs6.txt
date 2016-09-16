@@ -1,0 +1,12 @@
+load pdb/4rve.pdb.gz
+
+WIREFRAME OFF
+reset
+cpk off
+moveTo 1 976 152 154 18.6 200 23 27
+SELECT :D OR :E
+SPACEFILL ON
+SELECT :A OR :B
+CARTOONS ON
+COLOR lime
+CARTOONS OFF

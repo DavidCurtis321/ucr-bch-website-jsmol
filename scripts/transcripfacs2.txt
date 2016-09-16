@@ -1,0 +1,13 @@
+load pdb/1ysa.pdb.gz
+set ambient 20
+set specular on
+WIREFRAME OFF
+cpk off
+reset
+
+moveTo 1 705 -410 -579 144.7 115 0 7
+SELECT DNA
+SPACEFILL ON
+SELECT :C OR :D
+CARTOONS ON
+COLOR lime

@@ -49,7 +49,7 @@ basepairing [x]
 dnaminor [x]
 
 prodna [x]
-transcrip
+transcrip [x]
 
 iganti
 igstructure
