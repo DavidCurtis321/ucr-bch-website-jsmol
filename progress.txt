@@ -52,7 +52,7 @@ prodna [x]
 transcrip [x]
 
 iganti [x]
-igstructure
+igstructure [x]
 gfp
 newtim
 collagen

@@ -1,0 +1,21 @@
+load pdb/immunoglobulin.pdb.gz
+moveTo 0 3 997 -78 2.9 100 0 -9
+
+select protein
+wireframe off
+cpk off
+cartoons on
+color lime
+select hetero and not water
+spacefill on
+select atomno==5616
+label"<- Heavy Chain"
+color label red
+select :h
+color green
+select :i
+color lightgreen
+select :l
+color red
+select :m
+color pink
