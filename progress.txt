@@ -60,7 +60,7 @@ porin [x]
 proteindomains [x]
 silk [x]
 
-hexokinase
+hexokinase [x]
 rhodopsin
 
 atp [x]

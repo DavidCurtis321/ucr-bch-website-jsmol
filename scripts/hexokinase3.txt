@@ -1,0 +1,7 @@
+load pdb/1hkg.pdb.gz
+wireframe off
+cpk off
+select protein
+cpk on
+color lime
+moveto 0 501 195 843 84.8

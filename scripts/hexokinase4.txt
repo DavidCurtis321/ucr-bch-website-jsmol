@@ -1,0 +1,7 @@
+load pdb/2yhx.pdb.gz
+cpk off
+wireframe off
+select protein;cpk on;color lime
+select otg
+spacefill on
+moveTo 0 -898 -227 377 169.8
