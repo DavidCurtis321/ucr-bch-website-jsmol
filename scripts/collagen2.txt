@@ -1,0 +1,19 @@
+load pdb/1cag.pdb.gz
+spin off
+restrict protein
+delay 1
+wireframe off
+cpk off
+trace on
+dots on
+select hyp
+color red
+select gly or ala
+color yellow
+select pro
+color green
+delay 1
+select 1-11:A or 31-41:B or 61-72:C
+center selected
+moveTo 0 -954 -273 -126 55.5 391
+restrict selected

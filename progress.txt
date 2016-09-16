@@ -55,7 +55,7 @@ iganti [x]
 igstructure [x]
 gfp [x]
 newtim [x]
-collagen
+collagen [x]
 porin
 proteindomains
 silk
