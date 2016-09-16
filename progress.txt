@@ -61,6 +61,6 @@ proteindomains [x]
 silk [x]
 
 hexokinase [x]
-rhodopsin
+rhodopsin [x]
 
 atp [x]

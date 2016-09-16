@@ -1,0 +1,17 @@
+load pdb/1brd.pdb.gz
+
+moveto 0 1000 -14 18 179.4 125
+slab off
+wireframe off
+cartoons on
+color magenta
+select sidechain and hydrophobic
+wireframe 0.3
+color green
+wireframe off
+select sidechain and polar
+wireframe 0.3
+color yellow
+zoom 125
+select all
+spacefill off

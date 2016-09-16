@@ -1,0 +1,9 @@
+load pdb/1aep.pdb.gz
+
+moveto 0 888 114 -445 106.7 120
+slab off
+wireframe off
+cartoons on
+color magenta
+select all
+spacefill off
