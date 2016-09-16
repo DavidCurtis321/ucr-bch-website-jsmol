@@ -1,0 +1,8 @@
+load pdb/tim.pdb.gz
+cpk off
+wireframe off
+select :A; trace on; color blue
+select :B; trace on; color lime
+select 167-177; trace 0.8
+select pgh; wireframe 0.3; color red; dots on
+moveTo 0 -374 60 -926 176.6 125

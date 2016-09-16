@@ -1,0 +1,12 @@
+load pdb/tim.pdb.gz
+cpk off
+wireframe off
+select :B;color grey
+trace on
+select 232-236:B;color blue;
+select 95-103:B;color yellow;
+select 12:B or 95:B or 165:B;wireframe 0.3;color cpk
+select pgh;wireframe 0.3;dots on;color cpk
+select 232-236:B or 95-103:B or 12:B or 95:B or 165:B or pgh
+center selected
+moveTo 0 -296 -11 -955 129.4 156

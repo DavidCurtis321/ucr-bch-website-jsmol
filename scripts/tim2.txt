@@ -1,0 +1,14 @@
+load pdb/tim.pdb.gz
+cpk off
+wireframe off
+restrict :A
+cartoon on
+color gray
+moveTo 0 46 -10 -999 143.6 125
+select 12:A or 95:A or 165:A
+wireframe 0.3
+color cpk
+dots on
+select 12:A.NZ or 95:A.NE2 or 165:A.OE2
+label %n %r; color label white
+set labeloffset center

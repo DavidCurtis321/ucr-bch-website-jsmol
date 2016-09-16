@@ -54,7 +54,7 @@ transcrip [x]
 iganti [x]
 igstructure [x]
 gfp [x]
-newtim
+newtim [x]
 collagen
 porin
 proteindomains

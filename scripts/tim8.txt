@@ -1,0 +1,9 @@
+load pdb/tim.pdb.gz
+cpk off
+wireframe off
+select :B;color grey
+cpk on
+select 167-177:B;color white
+select pgh;cpk on;color cpk
+center selected
+moveTo 0 -107 -127 -986 151.1

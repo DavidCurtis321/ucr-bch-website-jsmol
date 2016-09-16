@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Triosephosphate Isomerase</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <script>
+            var Info = {
+                color: "#FFFFFF",
+                height: 400,
+                width: "100%",
+                script: "script scripts/tim1.txt",
+                use: "HTML5",
+                j2sPath: "jsmol/j2s",
+                serverURL: "jsmol/php/jsmol.php",
+                disableInitialConsole: true,
+                debug: false,
+            };
+
+            $(document).ready(function(){
+                Jmol.setDocument(0);
+                Jmol.getApplet("myJmol1", Info);
+                Info.script = "script scripts/tim2.txt";
+                Jmol.getApplet("myJmol2", Info);
+                Info.script = "script scripts/tim3.txt";
+                Jmol.getApplet("myJmol3", Info);
+                Info.script = "script scripts/tim4.txt";
+                Jmol.getApplet("myJmol4", Info);
+                Info.script = "script scripts/tim5.txt";
+                Jmol.getApplet("myJmol5", Info);
+                Info.script = "script scripts/tim6.txt";
+                Jmol.getApplet("myJmol6", Info);
+                Info.script = "script scripts/tim7.txt";
+                Jmol.getApplet("myJmol7", Info);
+                Info.script = "script scripts/tim8.txt";
+                Jmol.getApplet("myJmol8", Info);
+                Info.script = "script scripts/tim9.txt";
+                Jmol.getApplet("myJmol9", Info);
+                $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+                $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+                $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
+                $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
+                $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
+                $("#jsmolWindow6").html(Jmol.getAppletHtml(myJmol6));
+                $("#jsmolWindow7").html(Jmol.getAppletHtml(myJmol7));
+                $("#jsmolWindow8").html(Jmol.getAppletHtml(myJmol8));
+                $("#jsmolWindow9").html(Jmol.getAppletHtml(myJmol9));
+                $("#myJmol1_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol2_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol3_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol4_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol5_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol6_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol7_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol8_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#myJmol9_appletinfotablediv").css({
+                        "marginTop": "10",
+                        "marginRight": "auto",
+                        "marginBottom": "10",
+                        "marginLeft": "auto"
+                    });
+                $("#resetBtn1").click(reset1);
+                $("#resetBtn2").click(reset2);
+                $("#resetBtn3").click(reset3);
+                $("#resetBtn4").click(reset4);
+                $("#resetBtn5").click(reset5);
+                $("#resetBtn6").click(reset6);
+                $("#resetBtn7").click(reset7);
+                $("#resetBtn8").click(reset8);
+                $("#resetBtn9").click(reset9);
+                $("#spinBox1").click(spin1);
+                $("#spinBox2").click(spin2);
+                $("#spinBox3").click(spin3);
+                $("#spinBox4").click(spin4);
+                $("#spinBox5").click(spin5);
+                $("#spinBox6").click(spin6);
+                $("#spinBox7").click(spin7);
+                $("#spinBox8").click(spin8);
+                $("#spinBox9").click(spin9);
+            });
+
+            function reset1(event){
+                Jmol.script(myJmol1, "script scripts/tim1.txt")
+            };
+
+            function reset2(event){
+                Jmol.script(myJmol2, "script scripts/tim2.txt")
+            };
+
+            function reset3(event){
+                Jmol.script(myJmol3, "script scripts/tim3.txt")
+            };
+
+            function reset4(event){
+                Jmol.script(myJmol4, "script scripts/tim4.txt")
+            };
+
+            function reset5(event){
+                Jmol.script(myJmol5, "script scripts/tim5.txt")
+            };
+
+            function reset6(event){
+                Jmol.script(myJmol6, "script scripts/tim6.txt")
+            };
+
+            function reset7(event){
+                Jmol.script(myJmol7, "script scripts/tim7.txt")
+            };
+
+            function reset8(event){
+                Jmol.script(myJmol8, "script scripts/tim8.txt")
+            };
+
+            function reset9(event){
+                Jmol.script(myJmol9, "script scripts/tim9.txt")
+            };
+
+            function spin1(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol1, "spin off")
+                };
+            };
+
+            function spin2(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol2, "spin off")
+                };
+            };
+
+            function spin3(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol3, "spin off")
+                };
+            };
+
+            function spin4(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol4, "spin off")
+                };
+            };
+
+            function spin5(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol5, "spin off")
+                };
+            };
+
+            function spin6(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol6, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol6, "spin off")
+                };
+            };
+
+            function spin7(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol7, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol7, "spin off")
+                };
+            };
+
+            function spin8(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol8, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol8, "spin off")
+                };
+            };
+
+            function spin9(event){
+                if (event.target.checked){
+                    Jmol.script(myJmol9, "set spin x 10; set spin y 10; spin on")
+                } else {
+                    Jmol.script(myJmol9, "spin off")
+                };
+            };
+
+            Jmol._alertNoBinary = false;
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>DNA Base Pairing</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Introduction</h3>
+                    <p>
+                        This script shows some aspects of the mechanism of
+                        triose phosphate isomerase. (Based on 1ypi.pdb, Lolis et
+                        al. (1990) Biochemistry <strong>29</strong>: 6609-6618
+                        and 2ypi.pdb, Lolis &amp; Petsko (1990) Biochemistry
+                        <strong>29</strong>: 6619-6625)
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 1</h3>
+                            <p>
+                                Triose phosphate isomerase has an alpha/beta
+                                barrel structure with an inner barrel of beta
+                                sheets and an outer barrel of alpha helices.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox1"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 2</h3>
+                            <p>
+                                The active site residues are Lys 12, His 95 and
+                                Glu 165, which are located on the outside of the
+                                protein.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox2"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 3</h3>
+                            <p>
+                                In this view we see the enzyme in the
+                                <span style="color:blue;">absence</span> and
+                                <span style="color:green;">presence</span> of a
+                                <span style="color:red;">substrate analog</span>
+                                . Note that only one loop (thick lines) moves
+                                when substrate binds.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn3" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox3"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 4</h3>
+                            <p>
+                                Here is another view showing the interaction
+                                between the active site residues and the
+                                substrate. Note how <span style="color:green;">
+                                the loop</span> holds the substrate in place.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn4" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox4"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 5</h3>
+                            <p>
+                                A closer look at the active site. Note how Lys
+                                12 binds the phosphate of the substrate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn5" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox5"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 6</h3>
+                            <p>
+                                Note how Glu 165 is poised to accept a proton
+                                from either O1 or N of the substrate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn6" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox6"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 7</h3>
+                            <p>
+                                Note how His 95 is poised to donate a proton to
+                                either O1 or O2 of the substrate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow7"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn7" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox7"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 8</h3>
+                            <p>
+                                In this view we see the flexible loop over the
+                                substrate. The loop holds the substrate in place
+                                and protects the enediol intermediate from
+                                reacting with water.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow8"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn8" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox8"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>TIM 9</h3>
+                            <p>
+                                Notice how the <span style="color:blue;"> blue
+                                short helix</span> is positioned relative to the
+                                <strong>substrate</strong>. The helix is
+                                essentially a dipole and, as such, its positive
+                                end stabilizes the phosphate. The
+                                <span style="color:yellow;">yellow short helix
+                                </span> points toward <strong>His 95</strong>.
+                                The dipole of the helix is such that its
+                                positive end orients toward the His, effectively
+                                lowering its pKa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="jsmolWindow9"></div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" id="resetBtn9" style="margin-right: 10px;">Reset</button>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="spinBox9"> Spin On/Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>
+</html>

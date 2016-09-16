@@ -1,0 +1,5 @@
+select Lys
+dots off
+wireframe off
+select atomno=1886 or atomno=1887 or atomno=1888 or atomno=1892 or atomno=1893
+dots off

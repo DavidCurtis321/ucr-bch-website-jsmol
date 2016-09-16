@@ -1,0 +1,5 @@
+select Glu
+dots off
+wireframe off
+select atomno=1890 or atomno=1889
+dots off

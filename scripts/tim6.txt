@@ -1,0 +1,15 @@
+load pdb/tim.pdb.gz
+cpk off
+wireframe off
+select :B; trace on; color grey
+select 167-177:B; trace 0.8; color lime
+select pgh; wireframe 0.3; color red; dots on
+center selected
+select 12:B or 95:B or 165:B; color cpk;wireframe 0.3
+moveTo 0 46 497 867 37.0 195
+
+select pgh or 165:B
+wireframe 0.3
+select atomno=1890 or atomno=1889 or 165:B.OE2
+dots on
+center pgh or 12:B or 95:B or 165:B

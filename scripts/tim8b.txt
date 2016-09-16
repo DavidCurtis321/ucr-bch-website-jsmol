@@ -1,0 +1,6 @@
+select :B;cpk off
+trace on
+select 167-177:B; cpk; color white
+select pgh;cpk on;color cpk
+center selected
+moveTo 2 -276 533 -800 111.2 476
