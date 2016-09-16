@@ -53,7 +53,7 @@ transcrip [x]
 
 iganti [x]
 igstructure [x]
-gfp
+gfp [x]
 newtim
 collagen
 porin

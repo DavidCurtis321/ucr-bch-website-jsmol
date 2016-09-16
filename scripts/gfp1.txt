@@ -1,0 +1,15 @@
+load pdb/1ema.pdb.gz
+
+slab off
+rotate z -40
+rotate y -34
+rotate x 39
+
+wireframe off
+cpk off
+ribbons on
+color white
+
+select cro
+spacefill on
+color lime
