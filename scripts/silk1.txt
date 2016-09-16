@@ -1,0 +1,4 @@
+load pdb/1slk.pdb.gz
+
+wireframe 0.25
+moveTo 0 -59 997 -48 108.7 125 -3 -2

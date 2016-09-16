@@ -58,7 +58,7 @@ newtim [x]
 collagen [x]
 porin [x]
 proteindomains [x]
-silk
+silk [x]
 
 hexokinase
 rhodopsin
