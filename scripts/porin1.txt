@@ -1,0 +1,9 @@
+load pdb/1prn.pdb.gz
+cpk off
+select hetero
+wireframe off
+select protein
+wireframe off
+cartoons on
+color magenta
+moveTo 0 -836 -354 -419 102.7 150

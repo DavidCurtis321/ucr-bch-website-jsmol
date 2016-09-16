@@ -1,0 +1,12 @@
+load pdb/1prn.pdb.gz
+cpk off
+select hetero
+wireframe off
+select protein
+wireframe off
+cartoons on
+color magenta
+select sidechain and polar
+cpk on
+color red
+moveTo 0 19 -103 -994 51.2 150

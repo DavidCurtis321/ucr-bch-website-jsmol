@@ -56,7 +56,7 @@ igstructure [x]
 gfp [x]
 newtim [x]
 collagen [x]
-porin
+porin [x]
 proteindomains
 silk
 
