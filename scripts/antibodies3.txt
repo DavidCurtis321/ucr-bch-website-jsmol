@@ -1,0 +1,26 @@
+load pdb/1dbb.pdb.gz
+wireframe off
+
+slab off
+moveto 0 410 -912 -22 122.2 225
+select all
+color white
+cartoons on
+restrict :l and 1-107
+rotate z 120
+rotate y 60
+rotate x -23
+translate x -14
+translate y 16
+zoom 225
+select :l and 26-32
+color lime
+select :l and 50-54
+color lime
+select :l and 91-96
+color lime
+select :l and 36
+center selected
+select all
+spacefill off
+moveto 1 410 -912 -22 122.2 225

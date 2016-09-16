@@ -1,0 +1,23 @@
+load pdb/1dbb.pdb.gz
+
+slab off
+moveto 0 614 -219 758 99 150 -13 -12
+
+wireframe off
+cartoons on
+
+select all
+color white
+restrict :l and 108-216
+select sheets
+color red
+
+
+select all
+spacefill off
+
+select 185-188
+color white
+
+select 108
+color white

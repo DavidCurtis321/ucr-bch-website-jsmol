@@ -1,0 +1,25 @@
+load pdb/1dbb.pdb.gz
+slab off
+moveto 0 -274 -764 584 113.1 100
+
+wireframe off
+cartoons on
+
+#light variable
+select :l and 1-108
+color red
+
+#heavy variable
+select :h and 1-113
+color yellow
+
+#light constant
+select :l and 109-210
+color lime
+
+#heavy constant
+select :h and 114-228
+color blue
+
+select all
+spacefill off

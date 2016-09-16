@@ -1,0 +1,18 @@
+load pdb/1dbb.pdb.gz
+
+wireframe off
+
+moveto 0 -344 937 -52 174.5 125
+color white
+cartoons on
+select :l and 1-108
+color red
+select :h and 1-113
+color yellow
+select hetero
+color blue
+select atomno==3367
+select all
+spacefill off
+select hetero
+spacefill on

@@ -51,7 +51,7 @@ dnaminor [x]
 prodna [x]
 transcrip [x]
 
-iganti
+iganti [x]
 igstructure
 gfp
 newtim
