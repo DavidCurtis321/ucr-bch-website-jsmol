@@ -1,6 +1,6 @@
-load "pdb/173d.pdb.gz"
-model All
-moveTo 1 TOP
+load pdb/173d.pdb.gz
+model 0
+moveTo 0 TOP
 wireframe off
 cpk off
 
