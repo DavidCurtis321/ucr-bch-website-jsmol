@@ -5,4 +5,4 @@ center selected
 select :a;cpk on;color lime
 select atp;cpk on
 select atomno=5019;cpk on;color yellow
-moveTo 1 -994 -86 67 126.2 195
+moveTo 0 -994 -86 67 126.2 195
