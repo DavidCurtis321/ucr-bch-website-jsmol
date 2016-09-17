@@ -5,6 +5,8 @@ moveTo 0 -302 935 -184 177.9 476 -8 -20
 wireframe off
 cpk off
 select :c and 4
-spacefill on
+spacefill 0.35
+wireframe 0.15
 select :a and 466
-spacefill on
+spacefill 0.35
+wireframe 0.15

@@ -1,29 +1,15 @@
 load pdb/1glu.pdb.gz
 
 slab off
-moveTo 0 -98 686 721 157.2 400 -18 54
+moveTo 0 -198 977 -84 174.6 400
 wireframe off
-select :c and 4
-spacefill on
-select :a and 466
-spacefill on
+spacefill off
 
-spacefill off
-select :c
-spacefill off
-select :a and 461
-spacefill on
-select atomno==2053
-spacefill on
-color green
-select :c and 7
-spacefill on
-
-select all
-spacefill off
 select :a and 462
-spacefill on
+spacefill 0.35
+wireframe 0.15
 select :c and 5
-spacefill on
+spacefill 0.35
+wireframe 0.15
 
 center atomno=303
