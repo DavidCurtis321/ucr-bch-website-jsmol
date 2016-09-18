@@ -1,5 +1,5 @@
 load pdb/1tim.pdb.gz
-color white
+color gray
 spacefill off
 wireframe off
 cartoons on
