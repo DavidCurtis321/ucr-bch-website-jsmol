@@ -15,12 +15,14 @@
         debug: false,
     };
 
+    // don't load any JSMol until the page itself has finished loading
     $(document).ready(function(){
         // prevent JSMol from taking entire page
         Jmol.setDocument(0);
         // create new JSMol instance with parameters defined in Info above
         Jmol.getApplet("myJmol1", Info);
-        // reuse Info parameters for subsequent JSMol instances, changing script
+        // reuse Info parameters for subsequent JSMol instances, changing
+        // only the script path
         Info.script = "script scripts/actin2.txt";
         Jmol.getApplet("myJmol2", Info);
         // put JSMol code into the correct containers (id=jsmolWindowN)
