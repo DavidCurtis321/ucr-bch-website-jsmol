@@ -1,5 +1,4 @@
 load pdb/1wfb.pdb.gz
-spin off
 cpk off
 restrict 12-32:B
 center 12-32:B
