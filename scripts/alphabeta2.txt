@@ -1,5 +1,4 @@
 load pdb/3bto.pdb.gz
-spin off
 cpk off
 wireframe off
 select nad
