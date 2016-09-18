@@ -1,186 +1,176 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lysozymes</title>
+<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+<script type="text/javascript">
+    var Info = {
+        color: "#FFFFFF", // white background
+        height: 400,
+        width: "100%", // fill the JSMol box to its container's width
+        coverImage: "images/white.png",
+        deferApplet: true, // don't load until user clicks on JSMol box
+        deferUncover: true, // don't uncover until script fully executed
+        script: "script scripts/lysozymes1.txt",
+        use: "HTML5",
+        j2sPath: "jsmol/j2s",
+        serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+        disableInitialConsole: true,
+        debug: false,
+    };
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <script>
-            var Info = {
-                color: "#FFFFFF",
-                height: 400,
-                width: "100%",
-                script: "script scripts/lysozymes1.txt",
-                use: "HTML5",
-                j2sPath: "jsmol/j2s",
-                serverURL: "jsmol/php/jsmol.php",
-                disableInitialConsole: true,
-                debug: false,
-            };
+    // don't load any JSMol until the page itself has finished loading
+    $(document).ready(function(){
+        // prevent JSMol from taking entire page
+        Jmol.setDocument(0);
+        // create new JSMol instance with parameters defined in Info above
+        Jmol.getApplet("myJmol1", Info);
+        // reuse Info parameters for subsequent JSMol instances, changing
+        // only the script path
+        Info.script = "script scripts/lysozymes2.txt";
+        Jmol.getApplet("myJmol2", Info);
+        Info.script = "script scripts/lysozymes3.txt";
+        Jmol.getApplet("myJmol3", Info);
+        Info.script = "script scripts/lysozymes4.txt";
+        Jmol.getApplet("myJmol4", Info);
+        Info.script = "script scripts/lysozymes5.txt";
+        Jmol.getApplet("myJmol5", Info);
+        Info.script = "script scripts/lysozymes6.txt";
+        Jmol.getApplet("myJmol6", Info);
+        // put JSMol code into the correct containers (id=jsmolWindowN)
+        $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+        $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+        $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
+        $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
+        $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
+        $("#jsmolWindow6").html(Jmol.getAppletHtml(myJmol6));
+        // give our JSMol containers breathing room above and below
+        $("#myJmol1_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol2_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol3_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol4_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol5_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol6_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#resetBtn1").click(reset1);
+        $("#resetBtn2").click(reset2);
+        $("#resetBtn3").click(reset3);
+        $("#resetBtn4").click(reset4);
+        $("#resetBtn5").click(reset5);
+        $("#resetBtn6").click(reset6);
+        $("#spinBox1").click(spin1);
+        $("#spinBox2").click(spin2);
+        $("#spinBox3").click(spin3);
+        $("#spinBox4").click(spin4);
+        $("#spinBox5").click(spin5);
+        $("#spinBox6").click(spin6);
+    });
 
-            $(document).ready(function(){
-                Jmol.setDocument(0);
-                Jmol.getApplet("myJmol1", Info);
-                Info.script = "script scripts/lysozymes2.txt";
-                Jmol.getApplet("myJmol2", Info);
-                Info.script = "script scripts/lysozymes3.txt";
-                Jmol.getApplet("myJmol3", Info);
-                Info.script = "script scripts/lysozymes4.txt";
-                Jmol.getApplet("myJmol4", Info);
-                Info.script = "script scripts/lysozymes5.txt";
-                Jmol.getApplet("myJmol5", Info);
-                Info.script = "script scripts/lysozymes6.txt";
-                Jmol.getApplet("myJmol6", Info);
-                $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
-                $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
-                $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
-                $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
-                $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
-                $("#jsmolWindow6").html(Jmol.getAppletHtml(myJmol6));
-                $("#myJmol1_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol2_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol3_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol4_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol5_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol6_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#resetBtn1").click(reset1);
-                $("#resetBtn2").click(reset2);
-                $("#resetBtn3").click(reset3);
-                $("#resetBtn4").click(reset4);
-                $("#resetBtn5").click(reset5);
-                $("#resetBtn6").click(reset6);
-                $("#spinBox1").click(spin1);
-                $("#spinBox2").click(spin2);
-                $("#spinBox3").click(spin3);
-                $("#spinBox4").click(spin4);
-                $("#spinBox5").click(spin5);
-                $("#spinBox6").click(spin6);
-            });
+    function reset1(event){
+        Jmol.script(myJmol1, "script scripts/lysozymes1.txt")
+    };
 
-            function reset1(event){
-                Jmol.script(myJmol1, "script scripts/lysozymes1.txt")
-            };
+    function reset2(event){
+        Jmol.script(myJmol2, "script scripts/lysozymes2.txt")
+    };
 
-            function reset2(event){
-                Jmol.script(myJmol2, "script scripts/lysozymes2.txt")
-            };
+    function reset3(event){
+        Jmol.script(myJmol3, "script scripts/lysozymes3.txt")
+    };
 
-            function reset3(event){
-                Jmol.script(myJmol3, "script scripts/lysozymes3.txt")
-            };
+    function reset4(event){
+        Jmol.script(myJmol4, "script scripts/lysozymes4.txt")
+    };
 
-            function reset4(event){
-                Jmol.script(myJmol4, "script scripts/lysozymes4.txt")
-            };
+    function reset5(event){
+        Jmol.script(myJmol5, "script scripts/lysozymes5.txt")
+    };
 
-            function reset5(event){
-                Jmol.script(myJmol5, "script scripts/lysozymes5.txt")
-            };
+    function reset6(event){
+        Jmol.script(myJmol6, "script scripts/lysozymes6.txt")
+    };
 
-            function reset6(event){
-                Jmol.script(myJmol6, "script scripts/lysozymes6.txt")
-            };
+    function spin1(event){
+        if (event.target.checked){
+            Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol1, "spin off")
+        };
+    };
 
-            function spin1(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol1, "spin off")
-                };
-            };
+    function spin2(event){
+        if (event.target.checked){
+            Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol2, "spin off")
+        };
+    };
 
-            function spin2(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol2, "spin off")
-                };
-            };
+    function spin3(event){
+        if (event.target.checked){
+            Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol3, "spin off")
+        };
+    };
 
-            function spin3(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol3, "spin off")
-                };
-            };
+    function spin4(event){
+        if (event.target.checked){
+            Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol4, "spin off")
+        };
+    };
 
-            function spin4(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol4, "spin off")
-                };
-            };
+    function spin5(event){
+        if (event.target.checked){
+            Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol5, "spin off")
+        };
+    };
 
-            function spin5(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol5, "spin off")
-                };
-            };
+    function spin6(event){
+        if (event.target.checked){
+            Jmol.script(myJmol6, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol6, "spin off")
+        };
+    };
 
-            function spin6(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol6, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol6, "spin off")
-                };
-            };
+    // turn off the JSMol alert that binary file loading is limited
+    Jmol._alertNoBinary = false;
+</script>
 
-            Jmol._alertNoBinary = false;
-        </script>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Lysozymes</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Introduction</h3>
-                    <p>
+<!-- Page Title: Lysozymes -->
+<h2>Introduction</h2>
+<p>
+    
                         This script shows some aspects of the mechanism of
                         lysozyme. Lysozyme hydrolyzes the glycosidic linkage
                         bewteen N-acetylmuramic acid (NAM) and
@@ -188,159 +178,94 @@
                         (Based on 1lzc.pdb, Maenaka et al. (1995) J.Mol.Biol.
                         <strong>247</strong>: 281-293 and 9lyz.pdb, Kelly et al.
                         (1979) Nature <strong>282</strong>: 875-878)
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozyme 1</h3>
-                            <p>
+                    
+</p>
+<br>
+
+<h2>Lysozyme 1</h2>
+<p>
+    
                                 Lysozyme has a long cleft that will hold up to
                                 six residues of the <span style="color:yellow;">
                                 sugar polymer</span> (only four are shown here).
                                 The active site residues are
                                 <span style="color:lime;">Glu 35 and Asp 52
                                 </span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox1"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozymes 2</h3>
-                            <p>
+                            
+</p>
+<!-- JSMol Window Container -->
+<div id="jsmolWindow1"></div>
+<!-- UI Control Box -->
+<div style="text-align: center;">
+    <!-- give the button a right margin for spacing -->
+    <button type="button" id="resetBtn1" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox1"> Spin On/Off
+</div>
+<br>
+
+<h2>Lysozymes 2</h2>
+<p>
+    
                                 Note how they are poised to hydrolyze the
                                 glycosidic bond between the fourth and fifth
                                 sugar residue in the polymer.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox2"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozyme 3</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow2"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn2" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox2"> Spin On/Off
+</div>
+<h2>Lysozyme 3</h2>
+<p>
+    
                                 In the transition state the NAM at residue 4
                                 adopts a half-chair conformation. Here we see
                                 residues 2, 3, and 4 as they appear when bound
                                 to lysozyme.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow3"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn3" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox3"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozymes 4</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow3"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn3" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox3"> Spin On/Off
+</div>
+<h2>Lysozymes 4</h2>
+<p>
+    
                                 Here is the NAM at position 2. Note that it is
                                 in the chair conformation.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn4" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox4"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozymes 5</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow4"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn4" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox4"> Spin On/Off
+</div>
+<h2>Lysozymes 5</h2>
+<p>
+    
                                 Here is the NAM at position 4. Note it is in the
                                 half-chair conformation.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow5"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn5" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox5"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Lysozymes 6</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow5"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn5" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox5"> Spin On/Off
+</div>
+<h2>Lysozymes 6</h2>
+<p>
+    
                                 The half-chair conformation is favored because
                                 of steric interactions between the C 6 group of
                                 <span style="color:magenta;">NAM 4</span> and
                                 the acetamido group of
                                 <span style="color:green;">NAG 3</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow6"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn6" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox6"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    </body>
-</html>
+                            
+</p>
+<div id="jsmolWindow6"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn6" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox6"> Spin On/Off
+</div>

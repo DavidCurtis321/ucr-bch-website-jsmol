@@ -1,302 +1,291 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Protein Helical Structures</title>
+<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+<script type="text/javascript">
+    var Info = {
+        color: "#FFFFFF", // white background
+        height: 400,
+        width: "100%", // fill the JSMol box to its container's width
+        coverImage: "images/white.png",
+        deferApplet: true, // don't load until user clicks on JSMol box
+        deferUncover: true, // don't uncover until script fully executed
+        script: "script scripts/helices1.txt",
+        use: "HTML5",
+        j2sPath: "jsmol/j2s",
+        serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+        disableInitialConsole: true,
+        debug: false,
+    };
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <script>
-            var Info = {
-                color: "#FFFFFF",
-                height: 400,
-                width: "100%",
-                script: "script scripts/helices1.txt",
-                use: "HTML5",
-                j2sPath: "jsmol/j2s",
-                serverURL: "jsmol/php/jsmol.php",
-                disableInitialConsole: true,
-                debug: false,
-            };
+    // don't load any JSMol until the page itself has finished loading
+    $(document).ready(function(){
+        // prevent JSMol from taking entire page
+        Jmol.setDocument(0);
+        // create new JSMol instance with parameters defined in Info above
+        Jmol.getApplet("myJmol1", Info);
+        // reuse Info parameters for subsequent JSMol instances, changing
+        // only the script path
+        Info.script = "script scripts/helices2.txt";
+        Jmol.getApplet("myJmol2", Info);
+        Info.script = "script scripts/helices3.txt";
+        Jmol.getApplet("myJmol3", Info);
+        Info.script = "script scripts/helices4.txt";
+        Jmol.getApplet("myJmol4", Info);
+        Info.script = "script scripts/helices5.txt";
+        Jmol.getApplet("myJmol5", Info);
+        Info.script = "script scripts/helices6.txt";
+        Jmol.getApplet("myJmol6", Info);
+        Info.script = "script scripts/helices7.txt";
+        Jmol.getApplet("myJmol7", Info);
+        Info.script = "script scripts/helices8.txt";
+        Jmol.getApplet("myJmol8", Info);
+        Info.script = "script scripts/helices9.txt";
+        Jmol.getApplet("myJmol9", Info);
+        Info.script = "script scripts/helices10.txt";
+        Jmol.getApplet("myJmol10", Info);
+        Info.script = "script scripts/helices11.txt";
+        Jmol.getApplet("myJmol11", Info);
+        // put JSMol code into the correct containers (id=jsmolWindowN)
+        $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+        $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+        $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
+        $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
+        $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
+        $("#jsmolWindow6").html(Jmol.getAppletHtml(myJmol6));
+        $("#jsmolWindow7").html(Jmol.getAppletHtml(myJmol7));
+        $("#jsmolWindow8").html(Jmol.getAppletHtml(myJmol8));
+        $("#jsmolWindow9").html(Jmol.getAppletHtml(myJmol9));
+        $("#jsmolWindow10").html(Jmol.getAppletHtml(myJmol10));
+        $("#jsmolWindow11").html(Jmol.getAppletHtml(myJmol11));
+        // give our JSMol containers breathing room above and below
+        $("#myJmol1_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol2_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol3_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol4_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol5_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol6_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol7_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol8_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol9_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol10_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#myJmol11_appletinfotablediv").css({
+            "margin-top": "10px",
+            "margin-right": "auto",
+            "margin-bottom": "10px",
+            "margin-left": "auto"
+        });
+        $("#resetBtn1").click(reset1);
+        $("#resetBtn2").click(reset2);
+        $("#resetBtn3").click(reset3);
+        $("#resetBtn4").click(reset4);
+        $("#resetBtn5").click(reset5);
+        $("#resetBtn6").click(reset6);
+        $("#resetBtn7").click(reset7);
+        $("#resetBtn8").click(reset8);
+        $("#resetBtn9").click(reset9);
+        $("#resetBtn10").click(reset10);
+        $("#resetBtn11").click(reset11);
+        $("#spinBox1").click(spin1);
+        $("#spinBox2").click(spin2);
+        $("#spinBox3").click(spin3);
+        $("#spinBox4").click(spin4);
+        $("#spinBox5").click(spin5);
+        $("#spinBox6").click(spin6);
+        $("#spinBox7").click(spin7);
+        $("#spinBox8").click(spin8);
+        $("#spinBox9").click(spin9);
+        $("#spinBox10").click(spin10);
+        $("#spinBox11").click(spin11);
+    });
 
-            $(document).ready(function(){
-                Jmol.setDocument(0);
-                Jmol.getApplet("myJmol1", Info);
-                Info.script = "script scripts/helices2.txt";
-                Jmol.getApplet("myJmol2", Info);
-                Info.script = "script scripts/helices3.txt";
-                Jmol.getApplet("myJmol3", Info);
-                Info.script = "script scripts/helices4.txt";
-                Jmol.getApplet("myJmol4", Info);
-                Info.script = "script scripts/helices5.txt";
-                Jmol.getApplet("myJmol5", Info);
-                Info.script = "script scripts/helices6.txt";
-                Jmol.getApplet("myJmol6", Info);
-                Info.script = "script scripts/helices7.txt";
-                Jmol.getApplet("myJmol7", Info);
-                Info.script = "script scripts/helices8.txt";
-                Jmol.getApplet("myJmol8", Info);
-                Info.script = "script scripts/helices9.txt";
-                Jmol.getApplet("myJmol9", Info);
-                Info.script = "script scripts/helices10.txt";
-                Jmol.getApplet("myJmol10", Info);
-                Info.script = "script scripts/helices11.txt";
-                Jmol.getApplet("myJmol11", Info);
-                $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
-                $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
-                $("#jsmolWindow3").html(Jmol.getAppletHtml(myJmol3));
-                $("#jsmolWindow4").html(Jmol.getAppletHtml(myJmol4));
-                $("#jsmolWindow5").html(Jmol.getAppletHtml(myJmol5));
-                $("#jsmolWindow6").html(Jmol.getAppletHtml(myJmol6));
-                $("#jsmolWindow7").html(Jmol.getAppletHtml(myJmol7));
-                $("#jsmolWindow8").html(Jmol.getAppletHtml(myJmol8));
-                $("#jsmolWindow9").html(Jmol.getAppletHtml(myJmol9));
-                $("#jsmolWindow10").html(Jmol.getAppletHtml(myJmol10));
-                $("#jsmolWindow11").html(Jmol.getAppletHtml(myJmol11));
-                $("#myJmol1_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol2_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol3_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol4_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol5_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol6_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol7_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol8_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol9_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol10_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#myJmol11_appletinfotablediv").css({
-                        "marginTop": "10",
-                        "marginRight": "auto",
-                        "marginBottom": "10",
-                        "marginLeft": "auto"
-                    });
-                $("#resetBtn1").click(reset1);
-                $("#resetBtn2").click(reset2);
-                $("#resetBtn3").click(reset3);
-                $("#resetBtn4").click(reset4);
-                $("#resetBtn5").click(reset5);
-                $("#resetBtn6").click(reset6);
-                $("#resetBtn7").click(reset7);
-                $("#resetBtn8").click(reset8);
-                $("#resetBtn9").click(reset9);
-                $("#resetBtn10").click(reset10);
-                $("#resetBtn11").click(reset11);
-                $("#spinBox1").click(spin1);
-                $("#spinBox2").click(spin2);
-                $("#spinBox3").click(spin3);
-                $("#spinBox4").click(spin4);
-                $("#spinBox5").click(spin5);
-                $("#spinBox6").click(spin6);
-                $("#spinBox7").click(spin7);
-                $("#spinBox8").click(spin8);
-                $("#spinBox9").click(spin9);
-                $("#spinBox10").click(spin10);
-                $("#spinBox11").click(spin11);
-            });
+    function reset1(event){
+        Jmol.script(myJmol1, "script scripts/helices1.txt")
+    };
 
-            function reset1(event){
-                Jmol.script(myJmol1, "script scripts/helices1.txt")
-            };
+    function reset2(event){
+        Jmol.script(myJmol2, "script scripts/helices2.txt")
+    };
 
-            function reset2(event){
-                Jmol.script(myJmol2, "script scripts/helices2.txt")
-            };
+    function reset3(event){
+        Jmol.script(myJmol3, "script scripts/helices3.txt")
+    };
 
-            function reset3(event){
-                Jmol.script(myJmol3, "script scripts/helices3.txt")
-            };
+    function reset4(event){
+        Jmol.script(myJmol4, "script scripts/helices4.txt")
+    };
 
-            function reset4(event){
-                Jmol.script(myJmol4, "script scripts/helices4.txt")
-            };
+    function reset5(event){
+        Jmol.script(myJmol5, "script scripts/helices5.txt")
+    };
 
-            function reset5(event){
-                Jmol.script(myJmol5, "script scripts/helices5.txt")
-            };
+    function reset6(event){
+        Jmol.script(myJmol6, "script scripts/helices6.txt")
+    };
 
-            function reset6(event){
-                Jmol.script(myJmol6, "script scripts/helices6.txt")
-            };
+    function reset7(event){
+        Jmol.script(myJmol7, "script scripts/helices7.txt")
+    };
 
-            function reset7(event){
-                Jmol.script(myJmol7, "script scripts/helices7.txt")
-            };
+    function reset8(event){
+        Jmol.script(myJmol8, "script scripts/helices8.txt")
+    };
 
-            function reset8(event){
-                Jmol.script(myJmol8, "script scripts/helices8.txt")
-            };
+    function reset9(event){
+        Jmol.script(myJmol9, "script scripts/helices9.txt")
+    };
 
-            function reset9(event){
-                Jmol.script(myJmol9, "script scripts/helices9.txt")
-            };
+    function reset10(event){
+        Jmol.script(myJmol10, "script scripts/helices10.txt")
+    };
 
-            function reset10(event){
-                Jmol.script(myJmol10, "script scripts/helices10.txt")
-            };
+    function reset11(event){
+        Jmol.script(myJmol11, "script scripts/helices11.txt")
+    };
 
-            function reset11(event){
-                Jmol.script(myJmol11, "script scripts/helices11.txt")
-            };
+    function spin1(event){
+        if (event.target.checked){
+            Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol1, "spin off")
+        };
+    };
 
-            function spin1(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol1, "spin off")
-                };
-            };
+    function spin2(event){
+        if (event.target.checked){
+            Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol2, "spin off")
+        };
+    };
 
-            function spin2(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol2, "spin off")
-                };
-            };
+    function spin3(event){
+        if (event.target.checked){
+            Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol3, "spin off")
+        };
+    };
 
-            function spin3(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol3, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol3, "spin off")
-                };
-            };
+    function spin4(event){
+        if (event.target.checked){
+            Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol4, "spin off")
+        };
+    };
 
-            function spin4(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol4, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol4, "spin off")
-                };
-            };
+    function spin5(event){
+        if (event.target.checked){
+            Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol5, "spin off")
+        };
+    };
 
-            function spin5(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol5, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol5, "spin off")
-                };
-            };
+    function spin6(event){
+        if (event.target.checked){
+            Jmol.script(myJmol6, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol6, "spin off")
+        };
+    };
 
-            function spin6(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol6, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol6, "spin off")
-                };
-            };
+    function spin7(event){
+        if (event.target.checked){
+            Jmol.script(myJmol7, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol7, "spin off")
+        };
+    };
 
-            function spin7(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol7, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol7, "spin off")
-                };
-            };
+    function spin8(event){
+        if (event.target.checked){
+            Jmol.script(myJmol8, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol8, "spin off")
+        };
+    };
 
-            function spin8(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol8, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol8, "spin off")
-                };
-            };
+    function spin9(event){
+        if (event.target.checked){
+            Jmol.script(myJmol9, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol9, "spin off")
+        };
+    };
 
-            function spin9(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol9, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol9, "spin off")
-                };
-            };
+    function spin10(event){
+        if (event.target.checked){
+            Jmol.script(myJmol10, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol10, "spin off")
+        };
+    };
 
-            function spin10(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol10, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol10, "spin off")
-                };
-            };
+    function spin11(event){
+        if (event.target.checked){
+            Jmol.script(myJmol11, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol11, "spin off")
+        };
+    };
 
-            function spin11(event){
-                if (event.target.checked){
-                    Jmol.script(myJmol11, "set spin x 10; set spin y 10; spin on")
-                } else {
-                    Jmol.script(myJmol11, "spin off")
-                };
-            };
+    // turn off the JSMol alert that binary file loading is limited
+    Jmol._alertNoBinary = false;
+</script>
 
-
-            Jmol._alertNoBinary = false;
-        </script>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>DNA Base Pairing</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Introduction</h3>
-                    <p>
+<!-- Page Title: Protein Helical Structures -->
+<h2>Introduction</h2>
+<p>
+    
                         These scripts show three protein helical structures: an
                         alpha-helix, a 3.10 helix, and a pi-helix. Each
                         structure is composed of a polyalanine peptide, where
@@ -305,112 +294,75 @@
                         features: The degree of packing in the interior of the
                         helix and the orientation of the hydrogen bonding found
                         in these structures.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 1</h3>
-                            <p>
+                    
+</p>
+<br>
+
+<h2>Helices 1</h2>
+<p>
+    
                                 These images show the most common form of a
                                 helical structure, the alpha-helix. There are
                                 several ways to represent this structure
                                 graphically. The first representation is called
                                 a stick or wireframe diagram, similar to what is
                                 seen in organic chemistry.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn1" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox1"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 2</h3>
-                            <p>
+                            
+</p>
+<!-- JSMol Window Container -->
+<div id="jsmolWindow1"></div>
+<!-- UI Control Box -->
+<div style="text-align: center;">
+    <!-- give the button a right margin for spacing -->
+    <button type="button" id="resetBtn1" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox1"> Spin On/Off
+</div>
+<br>
+
+<h2>Helices 2</h2>
+<p>
+    
                                 This view is an expansion of the wireframe where
                                 the individual atoms are shown as little
                                 spheres.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn2" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox2"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 3</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow2"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn2" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox2"> Spin On/Off
+</div>
+<h2>Helices 3</h2>
+<p>
+    
                                 This view is a cartoon or ribbon diagram. This
                                 and the previous two models give the false
                                 impression that the interior of the helix is
                                 hollow, which it is not.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow3"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn3" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox3"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 4</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow3"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn3" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox3"> Spin On/Off
+</div>
+<h2>Helices 4</h2>
+<p>
+    
                                 This view is a space-filling or CPK
                                 representation of the alpha helix. Note how the
-                                &quot;hollow&quot; core is in fact very
+                                "hollow" core is in fact very
                                 filled.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn4" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox4"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 5</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow4"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn4" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox4"> Spin On/Off
+</div>
+<h2>Helices 5</h2>
+<p>
+    
                                 A second important aspect of the helix is the
                                 nature of the hydrogen bonding that helps
                                 stabilize the structure. Notice that the
@@ -422,31 +374,16 @@
                                 Thus, an alpha helix is referred to as a 3.6(13)
                                 helix. <strong>Residue</strong> numbers are
                                 <span style="color:red;">RED</span> and
-                                <strong>Hydrogen Bond Ring Atom</span></strong>
-                                numbers are <span style="color:yellow;">YELLOW
-                                </span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow5"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn5" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox5"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 6</h3>
-                            <p>
+                                <strong>Hydrogen Bond Ring Atom</strong>
+</p>
+<div id="jsmolWindow5"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn5" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox5"> Spin On/Off
+</div>
+<h2>Helices 6</h2>
+<p>
+    
                                 This image shows a less commonly encountered
                                 3(10) helix. Note, there are three residues per
                                 turn and 10 atoms forming the ring closing the
@@ -455,147 +392,79 @@
                                 triangular core. Also notice the greater angle
                                 of the hydrogen bonds, compared to those seen in
                                 the alpha-helix.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow6"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn6" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox6"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 7</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow6"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn6" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox6"> Spin On/Off
+</div>
+<h2>Helices 7</h2>
+<p>
+    
                                 This view show the 3(10) helix in a CPK or
                                 spacefilling representation. Notice that the
                                 core is completely filled.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow7"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn7" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox7"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 8</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow7"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn7" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox7"> Spin On/Off
+</div>
+<h2>Helices 8</h2>
+<p>
+    
                                 The yellow trace in this image highlights the 10
                                 atoms comprising the ring closed by the hydrogen
                                 bonding. The 10th atom, the proton, is not
                                 shown.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow8"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn8" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox8"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 9</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow8"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn8" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox8"> Spin On/Off
+</div>
+<h2>Helices 9</h2>
+<p>
+    
                                 These images show a third helical structure, the
                                 pi-helix. There are 4.4 residues per turn of a
                                 pi-helix and 16 residues forming the ring
                                 created by the hydrogen bonding. Thus, this is a
                                 4.4(16) helix. Notice that the core of this the
                                 pi-helix is almost perfectly square.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow9"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn9" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox9"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 10</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow9"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn9" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox9"> Spin On/Off
+</div>
+<h2>Helices 10</h2>
+<p>
+    
                                 This image shows a spacefilling representation of
                                 the pi-helix. Note that there is a small gap in
                                 the interior of the helix barrel.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow10"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn10" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox10"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Helices 11</h3>
-                            <p>
+                            
+</p>
+<div id="jsmolWindow10"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn10" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox10"> Spin On/Off
+</div>
+<h2>Helices 11</h2>
+<p>
+    
                                 This image shows a trace of the 16 atoms
                                 comprising the ring formed by hydrogen bonding
                                 and the 4.4 residues per turn of the the helix.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="jsmolWindow11"></div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="button" class="btn btn-danger" id="resetBtn11" style="margin-right: 10px;">Reset</button>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="spinBox11"> Spin On/Off
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    </body>
-</html>
+                            
+</p>
+<div id="jsmolWindow11"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn11" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox11"> Spin On/Off
+</div>
