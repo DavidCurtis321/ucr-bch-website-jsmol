@@ -1,6 +1,6 @@
 load pdb/116d.pdb.gz
-model All
-moveto 1.0 897 312 -312 67.15 125
+model 0
+moveTo 0 897 312 -312 67.15 55
 
 restrict dna
 spacefill on
