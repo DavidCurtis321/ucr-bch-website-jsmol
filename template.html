@@ -1,0 +1,109 @@
+<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+<script type="text/javascript">
+    var Info = {
+        color: "#FFFFFF", // white background
+        height: 400,
+        width: "100%", // fill the JSMol box to its container's width
+        coverImage: "images/white.png",
+        deferApplet: true, // don't load until user clicks on JSMol box
+        deferUncover: true, // don't uncover until script fully executed
+        script: "script scripts/template1.txt",
+        use: "HTML5",
+        j2sPath: "jsmol/j2s",
+        serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+        disableInitialConsole: true,
+        debug: false,
+    };
+
+    // don't load any JSMol until the page itself has finished loading
+    $(document).ready(function(){
+        // prevent JSMol from taking entire page
+        Jmol.setDocument(0);
+        // create new JSMol instance with parameters defined in Info above
+        Jmol.getApplet("myJmol1", Info);
+        // reuse Info parameters for subsequent JSMol instances, changing
+        // only the script path
+        Info.script = "script scripts/template2.txt";
+        Jmol.getApplet("myJmol2", Info);
+        // put JSMol code into the correct containers (id=jsmolWindowN)
+        $("#jsmolWindow1").html(Jmol.getAppletHtml(myJmol1));
+        $("#jsmolWindow2").html(Jmol.getAppletHtml(myJmol2));
+        // give our JSMol containers breathing room above and below
+        $("#myJmol1_appletinfotablediv").css({
+                "margin-top": "10px",
+                "margin-right": "auto",
+                "margin-bottom": "10px",
+                "margin-left": "auto"
+            });
+        $("#myJmol2_appletinfotablediv").css({
+                "margin-top": "10px",
+                "margin-right": "auto",
+                "margin-bottom": "10px",
+                "margin-left": "auto"
+            });
+        $("#resetBtn1").click(reset1);
+        $("#resetBtn2").click(reset2);
+        $("#spinBox1").click(spin1);
+        $("#spinBox2").click(spin2);
+    });
+
+    function reset1(event){
+        Jmol.script(myJmol1, "script scripts/template1.txt")
+    };
+
+    function reset2(event){
+        Jmol.script(myJmol2, "script scripts/template2.txt")
+    };
+
+    function spin1(event){
+        if (event.target.checked){
+            Jmol.script(myJmol1, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol1, "spin off")
+        };
+    };
+
+    function spin2(event){
+        if (event.target.checked){
+            Jmol.script(myJmol2, "set spin x 10; set spin y 10; spin on")
+        } else {
+            Jmol.script(myJmol2, "spin off")
+        };
+    };
+
+    // turn off the JSMol alert that binary file loading is limited
+    Jmol._alertNoBinary = false;
+</script>
+
+<!-- Page Title: Template -->
+<h2>Introduction</h2>
+<p>
+    This is an example introduction.
+</p>
+<br>
+
+<h2>Template 1</h2>
+<p>
+    This is an example paragraph explaining what is being shown in the first
+    JSMol view.
+</p>
+<!-- JSMol Window Container -->
+<div id="jsmolWindow1"></div>
+<!-- UI Control Box -->
+<div style="text-align: center;">
+    <!-- give the button a right margin for spacing -->
+    <button type="button" id="resetBtn1" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox1"> Spin On/Off
+</div>
+<br>
+
+<h2>Template 2</h2>
+<p>
+    This is an example paragraph explaining what is being shown in the second
+    JSMol view.
+</p>
+<div id="jsmolWindow2"></div>
+<div style="text-align: center; margin-top: 10px;">
+    <button type="button" id="resetBtn2" style="margin-right: 10px;">Reset</button>
+    <input type="checkbox" id="spinBox2"> Spin On/Off
+</div>
