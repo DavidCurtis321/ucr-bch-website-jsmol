@@ -2,7 +2,7 @@ load pdb/1dbb.pdb.gz
 wireframe off
 
 slab off
-moveto 0 410 -912 -22 122.2 225
+moveTo 0 410 -912 -22 122.2 225
 select all
 color white
 cartoons on
@@ -23,4 +23,4 @@ select :l and 36
 center selected
 select all
 spacefill off
-moveto 1 410 -912 -22 122.2 225
+moveTo 0 410 -912 -22 122.2 225

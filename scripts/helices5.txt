@@ -1,5 +1,5 @@
 load pdb/tb_alpha_helix_noh.pdb.gz
-moveTo 1 -526 -109 843 177.2 156 4 -5
+moveTo 0 -526 -109 843 177.2 156 4 -5
 calculate hbond
 hbond 0.1
 select atomno=11;label "1";color label yellow;font label 18

@@ -11,4 +11,4 @@ center selected
 restrict backbone
 select atomno=17 or atomno=29
 hbonds off
-moveTo 1 526 -789 -318 150.3 1000
+moveTo 0 526 -789 -318 150.3 1000

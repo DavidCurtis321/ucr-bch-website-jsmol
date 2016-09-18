@@ -1,5 +1,5 @@
 load pdb/2bdna.pdb.gz
-moveTo 1 -937 330 -113 166.6 375 -3 3
+moveTo 0 -937 330 -113 166.6 375 -3 3
 
 restrict 5 or 20
 wireframe 0.2

@@ -51,4 +51,4 @@ COLOR BLUE
 select atomno==1520
 center selected
 
-moveTo 1 -897 -441 39 158.6 250
+moveTo 0 -897 -441 39 158.6 250

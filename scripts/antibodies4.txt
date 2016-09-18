@@ -2,7 +2,7 @@ load pdb/1dbb.pdb.gz
 
 wireframe off
 
-moveto 0 -344 937 -52 174.5 125
+moveTo 0 -344 937 -52 174.5 125
 color white
 cartoons on
 select :l and 1-108

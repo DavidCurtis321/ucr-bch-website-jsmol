@@ -1,5 +1,5 @@
 load pdb/2gmt.pdb.gz
-moveto 0 -774 -77 629 171.4
+moveTo 0 -774 -77 629 171.4
 slab off
 wireframe off
 strands on

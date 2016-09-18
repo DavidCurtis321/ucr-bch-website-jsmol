@@ -7,4 +7,4 @@ select :D;cartoon on;color cartoon aqua
 select dg2;cpk on
 select hem;cpk on
 select ddh;cpk on
-moveTo 1 -33 999 -31 72.2 125
+moveTo 0 -33 999 -31 72.2 125

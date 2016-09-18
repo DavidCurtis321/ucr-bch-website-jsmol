@@ -1,5 +1,5 @@
 load pdb/perfect_pi_helix_mod.pdb.gz
-moveto 1 -8 -694 -720 163.3 124
+moveTo 0 -8 -694 -720 163.3 124
 hbond on
 select atomno=11;label "1";color label yellow;font label 18
 select atomno=10

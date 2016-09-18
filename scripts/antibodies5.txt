@@ -28,4 +28,4 @@ select all
 cpk off
 select 1-108 or hetero
 spacefill on
-moveto 0 -348 934 -76 175.8 244
+moveTo 0 -348 934 -76 175.8 244

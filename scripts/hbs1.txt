@@ -1,5 +1,5 @@
 load pdb/1hbs.pdb.gz
-moveto 0 56 -108 -993 92.1 144 -22 -4
+moveTo 0 56 -108 -993 92.1 144 -22 -4
 select all;wireframe off;cpk off
 select :h
 spacefill on

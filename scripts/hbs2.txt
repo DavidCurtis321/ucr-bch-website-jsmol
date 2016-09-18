@@ -1,5 +1,5 @@
 load pdb/1hbs.pdb.gz
-moveto 0 -62 -107 -992 87.5 156 -7 -2
+moveTo 0 -62 -107 -992 87.5 156 -7 -2
 select all
 wireframe off;cpk off
 select :h

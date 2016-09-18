@@ -19,4 +19,4 @@ color green
 cpk 30%
 dots on
 restrict 79-107 or atomno=812
-moveTo 1 0 0 0 0 195
+moveTo 0 0 0 0 0 195

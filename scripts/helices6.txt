@@ -3,7 +3,7 @@ select all
 wireframe on
 wireframe 0.2
 cpk off
-moveTo 1 616 -293 -731 155.6 124
+moveTo 0 616 -293 -731 155.6 124
 restrict *.ca
 label %r;color label yellow;font label 15
 select all

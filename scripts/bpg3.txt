@@ -13,4 +13,4 @@ select 545:D;color cpk
 select 625:D;color cpk
 select 686:D;color cpk
 select water; spacefill off
-moveTo 1 -33 999 -31 72.2 125
+moveTo 0 -33 999 -31 72.2 125

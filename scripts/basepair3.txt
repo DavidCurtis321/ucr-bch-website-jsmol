@@ -1,4 +1,4 @@
 load pdb/2bdna.pdb.gz
-moveTo 1 931 -250 265 110.1 250 -1 -20
+moveTo 0 931 -250 265 110.1 250 -1 -20
 restrict 4 or 5 or 20 or 21
 spacefill on

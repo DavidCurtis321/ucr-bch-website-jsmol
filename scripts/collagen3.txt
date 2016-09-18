@@ -14,4 +14,4 @@ select gly or ala
 color yellow
 select pro
 color green
-moveto 0 705 90 -703 168 2300
+moveTo 0 705 90 -703 168 2300

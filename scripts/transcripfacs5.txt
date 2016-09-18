@@ -4,7 +4,7 @@ WIREFRAME OFF
 cpk off
 reset
 slab off
-moveTo 1 -964 129 -232 170.2 195 18 -16
+moveTo 0 -964 129 -232 170.2 195 18 -16
 SELECT :D OR :E
 SPACEFILL ON
 SELECT :A OR :B

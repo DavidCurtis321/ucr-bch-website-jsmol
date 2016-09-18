@@ -2,7 +2,7 @@ load pdb/1glu.pdb.gz
 
 WIREFRAME OFF
 cpk off
-moveTo 1 -567 -717 -404 107.4 200 13 28
+moveTo 0 -567 -717 -404 107.4 200 13 28
 slab off
 SELECT DNA
 SPACEFILL ON

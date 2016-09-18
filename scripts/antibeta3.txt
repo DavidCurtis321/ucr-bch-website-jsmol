@@ -9,4 +9,4 @@ select 2-7 and sidechain
 color yellow
 select 14-18 and sidechain
 color green
-moveTo 1 331 -906 263 112.9 588
+moveTo 0 331 -906 263 112.9 588

@@ -13,4 +13,4 @@ select all
 wireframe off
 cpk off
 restrict 1-18
-moveTo 1 -706 456 -542 106.0 305
+moveTo 0 -706 456 -542 106.0 305

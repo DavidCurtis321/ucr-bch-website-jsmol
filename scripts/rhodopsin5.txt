@@ -1,6 +1,6 @@
 load pdb/1aep.pdb.gz
 
-moveto 0 907 188 -378 104.2
+moveTo 0 907 188 -378 104.2
 slab off
 wireframe off
 cartoons on

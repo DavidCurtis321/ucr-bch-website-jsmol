@@ -1,5 +1,5 @@
 load pdb/tb_310_helix.pdb.gz
-moveTo 1 616 -293 -731 155.6 124
+moveTo 0 616 -293 -731 155.6 124
 hbond on
 select atomno=5;label "1";color label yellow;font label 18
 select atomno=4

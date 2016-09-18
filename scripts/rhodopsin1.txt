@@ -1,6 +1,6 @@
 load pdb/1brd.pdb.gz
 
-moveto 0 998 -56 21 174.6
+moveTo 0 998 -56 21 174.6
 slab off
 wireframe off
 cartoons on

@@ -1,5 +1,5 @@
 load pdb/1rna.pdb.gz
-moveTo 1 -928 259 268 125.4 125 -2 2
+moveTo 0 -928 259 268 125.4 125 -2 2
 spacefill on
 select water
 spacefill off

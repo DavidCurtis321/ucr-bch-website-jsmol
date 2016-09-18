@@ -4,7 +4,7 @@ wireframe off
 cartoons on
 color silver
 reset
-moveto 0 517 -684 514 151.2
+moveTo 0 517 -684 514 151.2
 slab off
 select 1-44
 color yellow

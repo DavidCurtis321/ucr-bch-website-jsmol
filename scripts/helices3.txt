@@ -2,6 +2,6 @@ load pdb/tb_alpha_helix_noh.pdb.gz
 select all
 wireframe off
 cpk off
-moveTo 1 352 -858 -373 109.3 124 -1 -1
+moveTo 0 352 -858 -373 109.3 124 -1 -1
 ribbon on
 color ribbon yellow

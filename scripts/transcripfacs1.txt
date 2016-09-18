@@ -3,7 +3,7 @@ load pdb/1lcd.pdb.gz
 WIREFRAME OFF
 cpk off
 reset
-moveTo 1 467 -585 663 100.7
+moveTo 0 467 -585 663 100.7
 SELECT DNA
 SPACEFILL ON
 SELECT :A
