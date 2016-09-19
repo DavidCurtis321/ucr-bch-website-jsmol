@@ -7,3 +7,4 @@ wireframe 0.25
 select carbon
 color silver
 moveTo 0 -9 -975 -220 99 156 -29 -21
+center visible

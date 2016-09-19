@@ -1,6 +1,8 @@
 load pdb/9lyz.pdb.gz
 
 moveTo 0 -999 -33 7 179.3
-WIREFRAME 0.25
+wireframe 0.25
 select carbon
 color silver
+select hoh
+spacefill off

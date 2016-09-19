@@ -11,3 +11,5 @@ wireframe 0.15
 select :a and 496
 spacefill 0.35
 wireframe 0.15
+
+center selected
